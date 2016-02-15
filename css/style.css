@@ -1,35 +1,171 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+/*
+ Definieren der Variablen, um im Verlauf des Dokuments auf diese zurückgreifen zu können.
+*/
+/*
+ Grundlegende Definitionen, die den Browser normalisieren
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none; }
 
-body{
-    background: #f6f6f6;
-    height: 100vh;
-}
+.infinite {
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; }
 
-h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 20px;
-}
+.light-blue-grey {
+  color: #3a4750; }
 
-p{
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    font-weight: 300;
-}
+.dark-aqua {
+  color: #53a8b6; }
 
-#box{
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 20px;
-    width: 350px;
-    background: #fff;
-    color: #5d5d5d;
-    border-radius: 10px;
-}
+h1 {
+  font-size: 56px;
+  font-family: "source_sans_pro_bold", sans-serif; }
+
+.subtitle {
+  font-family: "source_sans_pro_light", sans-serif;
+  font-size: 22px;
+  line-height: 34px; }
+
+.centered {
+  text-align: center; }
+
+header {
+  width: 100%;
+  height: 80px;
+  z-index: 5;
+  position: fixed;
+  padding: 20px 0px 0px 0px; }
+
+#header-logo {
+  margin: 0px 0px 0px -30px; }
+
+#mdhome {
+  width: 100%;
+  height: 100vh;
+  background: #f8f8f8 url(../img/layout/md-home-pattern.png); }
+
+#mdhome-content {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+#mdhome-skyline {
+  margin: 0px auto 30px auto; }
+
+.col-1 {
+  width: 80px; }
+
+.col-2 {
+  width: 180px; }
+
+.col-3 {
+  width: 280px; }
+
+.col-4 {
+  width: 380px; }
+
+.col-5 {
+  width: 480px; }
+
+.col-6, .halfwidth {
+  width: 580px; }
+
+.col-7 {
+  width: 680px; }
+
+.col-8 {
+  width: 780px; }
+
+.col-9 {
+  width: 880px; }
+
+.col-10 {
+  width: 980px; }
+
+.col-11 {
+  width: 1080px; }
+
+.col-12, .fullwidth {
+  width: 1180px; }
+
+.div-center {
+  margin: 0 auto; }
+
+/*
+ Clearfix um nach gefloateten Objekten wieder zurückzusetzen und Elternelemente wieder zu normalisieren.
+*/
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0px; }
+
+/*
+    Einbinden der Webfonts
+
+    Lizenz "Source Sans Pro":
+    Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+
+    This Font Software is licensed under the SIL Open Font License, Version 1.1.
+*/
+@font-face {
+  font-family: 'source_sans_pro_bold';
+  src: url("../fonts/sourcesanspro-bold-webfont.eot");
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro_light';
+  src: url("../fonts/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro_regular';
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro_semibold';
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot");
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-semibold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-semibold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?6dspxr");
+  src: url("../fonts/icomoon.eot?6dspxr#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6dspxr") format("truetype"), url("../fonts/icomoon.woff?6dspxr") format("woff"), url("../fonts/icomoon.svg?6dspxr#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-icon-arrow-down:before {
+  content: "\e900"; }
+
+.icon-icon-close:before {
+  content: "\e901"; }
+
+.icon-icon-link:before {
+  content: "\e902"; }
+
+/*# sourceMappingURL=style.css.map */
