@@ -9,23 +9,65 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: none; }
+  border: none;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important; }
 
-.infinite {
-  animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite; }
+p {
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
 
 .light-blue-grey {
   color: #3a4750; }
 
+.bg-light-blue-grey {
+  background: #3a4750; }
+
 .dark-aqua {
   color: #53a8b6; }
 
+.bg-dark-aqua {
+  background: #53a8b6; }
+
+.light-grey {
+  color: #eeeeee; }
+  .light-grey a {
+    color: #eeeeee; }
+  .light-grey a:visited {
+    color: #eeeeee; }
+
+.bg-light-grey {
+  background: #eeeeee; }
+
+/* - - - - - - - - - -
+
+    Alle globalen Textformatierungen für verschiedene Formate und Grössen.
+
+- - - - - - - - - - */
 h1 {
   font-size: 56px;
   font-family: "source_sans_pro_bold", sans-serif; }
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  font-family: "source_sans_pro_bold", sans-serif; }
+
+.text16 {
+  line-height: 24px;
+  font-size: 16px;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.light {
+  font-family: "source_sans_pro_light", sans-serif; }
 
 .subtitle {
   font-family: "source_sans_pro_light", sans-serif;
@@ -35,12 +77,71 @@ h1 {
 .centered {
   text-align: center; }
 
+.quote {
+  padding: 100px 0px; }
+
+.more-info {
+  padding: 100px 0px 50px 0px; }
+
+/* - - - - - - - - - -
+
+    Globale Eigenschaften, die im Verlauf des Dokuments immer wieder vorkommen können und deshalb einfach als Klasse vergeben werden.
+
+- - - - - - - - - - */
+/*
+    Abgerundete Buttons mit Icon für ausgehende Links am Ende einer <section> um weitere Informationen zur Verfügung zu stellen.
+*/
+.link-buttons {
+  padding: 0px 0px 100px 0px; }
+
+.external-button {
+  border-radius: 12px;
+  border: 1px solid #cdcccc;
+  padding: 25px;
+  float: left;
+  margin: 10px; }
+  .external-button h2 {
+    letter-spacing: 0;
+    position: relative;
+    margin-left: 50px; }
+    .external-button h2 a {
+      color: #3a4750;
+      text-decoration: none;
+      margin: -25px -40px -25px -40px;
+      padding: 25px 40px 25px 40px; }
+  .external-button h2:before {
+    font-family: 'icomoon';
+    content: "\e902";
+    color: #53a8b6;
+    font-size: 18px;
+    position: absolute;
+    top: 8px;
+    left: -50px; }
+
+.external-button:nth-child(3n+3) {
+  margin-right: 0px; }
+
+.external-button:nth-child(3n+1) {
+  margin-left: 0px; }
+
+/*
+    Diese Klasse ist dazu da, um am Anfang einer neuen Section den Titel und den kurzen Einleitungstext pasend zu positionieren.
+*/
+.sectionhead {
+  padding: 200px 0px 100px 0px; }
+
+/* - - - - - - - - - -
+
+    Alle Formatierungen und Eigenschaften für den Header der sichtbar ist, wenn die Seite aufgerufen wird und der Loader ausgeblentet ist.
+
+- - - - - - - - - - */
 header {
   width: 100%;
   height: 80px;
-  z-index: 5;
+  z-index: 10;
   position: fixed;
-  padding: 20px 0px 0px 0px; }
+  padding: 20px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.8); }
 
 #header-logo {
   margin: 0px 0px 0px -30px; }
@@ -58,6 +159,128 @@ header {
 
 #mdhome-skyline {
   margin: 0px auto 30px auto; }
+
+#scrolldown {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*
+      Angepasste Animation von Animate.css, dass das Element ein wenig schwächer auf und ab hüpft und so weniger hektisch wirkt.
+  */ }
+  #scrolldown .text16 {
+    margin: 0px 0px 20px 0px;
+    padding: 0px 58px; }
+  #scrolldown span {
+    margin: -20px;
+    padding: 20px;
+    cursor: pointer; }
+@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  70% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+  70% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+.infinite {
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; }
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für den Bereich "Wie werde ich MediamatikerIn?
+
+- - - - - - - - - - */
+#mdwie {
+  width: 100%;
+  background: #f8f8f8; }
+
+#videosection {
+  height: 638px;
+  background: #303841;
+  position: relative;
+  overflow: hidden; }
+
+/*
+    Der Bereich des Videoplayers mit dem geblurten Hintergrundbild.
+*/
+#video {
+  z-index: 5 !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#video:before {
+  content: "";
+  position: absolute;
+  background: url(../img/screenshot-video.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  transform: scale(1.1);
+  opacity: 0.2; }
+
+#playerwrapper {
+  position: relative;
+  z-index: 10 !important;
+  margin: 100px auto 35px auto; }
+  #playerwrapper p {
+    margin-top: 35px; }
+
+.grid-item {
+  padding: 20px;
+  margin: 10px;
+  float: left; }
+  .grid-item img {
+    margin-bottom: 20px; }
+  .grid-item h2 {
+    margin-bottom: 20px; }
+
+.grid-item:first-child {
+  margin-left: 0; }
+
+.grid-item:last-child {
+  margin-right: 0; }
+
+.grid-item:nth-child(3n+3) {
+  margin-right: 0; }
+
+.grid-item:nth-child(3n+1) {
+  margin-left: 0; }
+
+#mdschule .external-button {
+  margin: 0 auto !important;
+  float: none !important; }
+#mdschule .external-button:nth-child(3n+1) {
+  margin-left: auto !important; }
 
 .col-1 {
   width: 80px; }
@@ -160,6 +383,7 @@ header {
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-icon-arrow-down:before {
+  font-size: 24px;
   content: "\e900"; }
 
 .icon-icon-close:before {
