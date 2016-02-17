@@ -4,16 +4,30 @@
         
         <meta charset="utf-8">
         <title>Interaktives Berufsportrait eines Mediamatikers</title>
+        <link rel="stylesheet" href="css/video-js.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/style.css">
         
-        <script src="js/jquery-2.2.0.min.js"></script>
+        <!--<script src="js/jquery-2.2.0.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="js/jquery.inview.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            videojs.options.flash.swf = "js/video-js/video-js.swf"
+        </script>
         <script src="js/script.js"></script>
         
-        <script src="js/wow.min.js"></script>
+        
         <script>
             // Initialisierung der wow.js-Plugins.
               new WOW().init();
+        </script>
+        
+        <script>
+            
+            
+        
+                
         </script>
         
         <script src="js/script.js"></script>
@@ -31,7 +45,7 @@
         <section id="mdhome">
             
             <div id="mdhome-content" class="col-8 div-center">
-                <div id="mdhome-skyline" class="col-4 div-center">
+                <div id="mdhome-skyline" class="col-4 div-center wow fadeInUp">
                     <img src="img/layout/md-home-skyline.svg" alt="Mediamatiker">
                 </div>
                 <h1 class="dark-aqua centered">Berufsbild Mediamatiker</h1>
@@ -62,9 +76,24 @@
                 <div class="col-8 div-center">
                     <div id="video">
                         <div id="playerwrapper" class="col-8 div-center">
-                            <img src="img/screenshot-video.png" widh="780" height="438">
+                            
+                            <div id="videoplayer">
+                            
+                                <video id="video-mediamatiker" class="video-js vjs-default-skin"
+                                  controls preload="auto" width="780" height="439"
+                                  poster="img/screenshot-video.png"
+                                  data-setup='{"example_option":true}'>
+                                  <source src="media/mediamatiker.mp4" type='video/mp4' />
+                                  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                  <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                                </video>
+                                
+                            </div>
+                            
+                            <!--<img src="img/screenshot-video.png" widh="780" height="438">-->
                             <p class="text16 light centered light-grey">
-                            Dieses Video wurde von Mediamatik-Lernenden erstellt. Weitere Infos dazu findest du <a href="http://www.stelle.admin.ch/berufseinstieg/00755/01139/index.html?lang=de" alt="Lernendenvideos Bund" target="_blank">hier.</a>
+                            Dieses Video wurde von Mediamatik-Lernenden erstellt. Weitere Infos dazu findest du <a class="lightlink"  href="http://www.stelle.admin.ch/berufseinstieg/00755/01139/index.html?lang=de" alt="Lernendenvideos Bund" target="_blank">hier</a>.
                         </p>
                         </div>
                         
@@ -189,7 +218,7 @@
             
             <div class="more-info col-8 div-center">
                 <p class="subtitle light-blue-grey centered">
-                    Weitere Informationen hierzu findest du auf de folgenden Webseite:
+                    Weitere Informationen hierzu findest du auf der folgenden Webseite:
                 </p>
             </div>
             
@@ -202,6 +231,157 @@
                 <div class="clearfix"></div>
                 
             </section>
+        
+        
+        
+        </section>
+        
+        
+        <section id="mdweg">
+            
+            <div class="sectionhead col-10 div-center">
+                <h1 class="dark-aqua centered">Wie werde ich MediamatikerIn im ZEM?</h1> 
+                <p class="subtitle light-blue-grey centered col-8 div-center">
+                    Schön zu hören, dass du dich für die Lehrstelle als MediamatikerIn im Zentrum elektronische Medien interessierst. Doch wie kommst du nun zu uns? Folgend zeige ich dir, den Ablauf mit allen wichtigen Zwischenschritten. 
+                </p>
+            </div>
+            
+            <section id="timeline">
+                
+                <div class="timeline-circle div-center wow fadeInUp"></div>
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-selbststaendig.svg">
+                    <h2 class="centered light-blue-grey uppercase">Eingnungstest</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Bevor du dich für eine Lehre als MediamatikerIn bewirbst, machst du einen Eignungstest. Hierbei gibt es verschiedene. Für die Lehre in der BiCT AG brauchst du den Eignungstest der  ICT Berufsbildung Bern Mediamatik. Mehr Infos findest du hier.
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-selbststaendig.svg">
+                    <h2 class="centered light-blue-grey uppercase">Bewerbung</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Hast du den Eignungstest bestanden, so kannst du dich nun bewerben. Sende deine Unterlagen (Personalien, Lebenslauf, Testergebnisse, Zeugnisse, ...) an die BiCT AG und warte auf eine Rückmeldung. 
+                        Viel Glück!
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-selbststaendig.svg">
+                    <h2 class="centered light-blue-grey uppercase">Lehrstelle BiCT</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Wurdest du zu einem Bewerbungsgespräch eingeladen und hast die Lehrstelle erhalten? 
+                        Herzlichen Glückwunsch!
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
+                    Lehrbeginn
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-selbststaendig.svg">
+                    <h2 class="centered light-blue-grey uppercase">Zweijährige Grundbildung</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        In den ersten zwei Lehrjahren lernst du jede Menge an neuen Programmen und eignest dir ein breites Wissen in verschiedenen Multimediabereichen an.
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-selbststaendig.svg">
+                    <h2 class="centered light-blue-grey uppercase">Bewerbung / Workbook</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Mitte des zweiten Lehrjahres fängt die Bewerbungsphase für die weiteren zwei Lehrjahre. Dabei stellen sich verschiedene Betriebe vor, bei denen du dich bewerben kannst. Darunter ist auch das Zentrum elektronische Medien ZEM. In deinem Workbook dokumentierst du alle gelernten Dinge aus der bisherigen Lehrzeit.
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
+                    Lehrstelle
+                </div>
+                
+                <div class="timeline-end col-8 div-center">
+                    
+                    
+                    
+                    <svg version="1.1" id="Luftballon" class="notanimated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="200px" viewBox="0 0 100 200" style="enable-background:new 0 0 100 200;" xml:space="preserve">
+                    <style type="text/css">                        
+                        .icon-ballon-path-outline{fill:none;stroke:#54a8b6;stroke-width:4;stroke-miterlimit:10}
+                        .icon-ballon-path-reflection{fill:none;stroke:#54a8b6;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10}
+                        .icon-ballon-path-ventil{fill:none;stroke:#54a8b6;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+                        .icon-ballon-path-schnur{fill:none;stroke:#54a8b6;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10}
+                    </style>
+                    <g id="lb-group">
+                        <path id="lb-ballon" class="icon-ballon-path-outline" d="M50.2,28.5c17.3,0,31.4,14,31.4,31.4c0,11.6-4.7,25.4-19.6,38.9c-2.9,2.4-5.7,3.9-11.7,4.2   c-6.1-0.3-8.9-1.8-11.8-4.2C23.5,85.2,18.9,71.5,18.9,59.9C18.9,42.6,32.9,28.5,50.2,28.5z"/>
+                        <path id="lb-reflektion" class="icon-ballon-path-reflection" d="M30.4,53.8c2.9-8,10-13.9,18.7-15"/>
+                        <path id="lb-ende" class="icon-ballon-path-ventil" d="M53.4,104 60.7,117.4 39.8,117.4 47,104.4  "/>
+                        <path id="lb-schnur" class="icon-ballon-path-schnur" d="M47.2,123.5c0,0-10.1,9.6,4.1,23.8c14.4,14.4-4.1,25-4.1,25"/>
+                    </g>
+                    </svg>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!--<img height="150" src="img/content/icons/icon-willkommen.svg">-->
+                    <!--<object class="" height="150" data="img/content/icons/icon-willkommen-minified.svg" type="image/svg+xml"></object>-->
+                    <h1 class="dark-aqua centered wow fadeInUp">Willkommen im ZEM!</h1> 
+                    <p class="subtitle light-blue-grey centered col-8 div-center wow fadeInUp">
+                        Hast du dich beim ZEM beworben und die Lehrstelle für die weiteren zwei Lehrjahre erhalten, bist du ab Sommer ein Teil unseres Teams. Herzlich Willkommen! 
+                    </p>
+                
+                </div>
+                
+                
+            
+            </section>
+            
+            <section id="timeline-facts">
+                <div class="quote col-8 div-center">
+                    <p class="subtitle light-blue-grey centered">
+                        Der Weg geht auch noch weiter wenn du die Lehre im ZEM weiterführst – <br> und dies an jedem Arbeitstag. 
+                    </p>
+                </div>
+                
+                <div class="numbers-wrapper col-10 div-center">
+                    
+                    <div class="number-box col-4">
+                        <h2 class="countup-number-big centered">7208</h2>
+                        <h2 class="centered light-blue-grey uppercase">Kilometer</h2>
+                            <p lang="de" class="text16 centered light light-blue-grey">
+                                Das ist die Strecke, die ich über zwei Lehrjahre mit dem ÖV von mir Zuhause ins ZEM und zurück gefahren bin. Die Strecke entspricht der Entfernung vom Bahnhof Bern <a class="darklink" href="https://goo.gl/cjEc7z" alt="Link zu besagter Stelle auf Google Maps." target="_blank">auf einen Highway</a> nordöstlich von Charlestown, South Carolina USA.
+                            </p>                    
+                    </div>
+                    
+                    <div class="number-spacer col-2"></div>
+                    
+                    <div class="number-box col-4">
+                        <h2 class="countup-number-big centered">334</h2>
+                        <h2 class="centered light-blue-grey uppercase">Stunden</h2>
+                            <p lang="de" class="text16 centered light light-blue-grey">
+                                Das ist die Zeit, die alle Fahrten zusammen dauerten. In dieser Zeit könnte man alle Harry Potter Filme 17 Mal komplett anschauen oder den Song „We are the World“ von USA for Africa 2834 Mal hören. 
+                            </p>                    
+                    </div>
+                
+                </div>
+                
+            </section>
+        
+        
         
         
         
@@ -225,5 +405,7 @@
                 </script>
                 <noscript><p><img src="//stats.zem.ch/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
             <!-- End Piwik Code -->
+        
+        <script src="js/video-js/video.min.js"></script>
     </body>
 </html>
