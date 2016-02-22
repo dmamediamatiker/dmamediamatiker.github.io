@@ -45,11 +45,33 @@
         <script src="js/script.js"></script>
         
     </head>
-    <body>
+    <body class="noscroll">
         
         <input type="checkbox" id="openIAM" class="hidden">
         <input type="checkbox" id="openMT" class="hidden">
         <input type="checkbox" id="openPM" class="hidden">
+        
+        <section id="mdloader">
+            <div class="fullwidth div-center">
+                <div id="header-logo" class="col-4">
+                     <img src="img/layout/md-logo-admin-vbs-inv.svg" alt="Logo VBS"> 
+                </div>
+            </div>
+            <div id="mdloader-content" class="col-8 div-center">                
+                <h1 class="dark-aqua centered">Berufsbild Mediamatiker</h1>
+                <p class="subtitle light-grey centered">
+                    Bitte habe einen kurzen Moment Geduld. <br>
+                    Die Inhalte werden geladen.
+                </p>
+            </div>
+            <div class="loaderbar-wrapper col-2 div-center">
+                <div class="loaderbar">
+                </div>
+            </div>
+        
+        
+        </section>
+        
         
         <header>
             <div class="fullwidth div-center">
@@ -443,6 +465,61 @@
             
         </section>
         
+        
+        
+        <section id="overlayIAM" class="overlay">
+            <div class="overlaywrapper col-12 div-center animated fadeInUp">
+                <div class="sectionhead col-8 div-center">
+                    <h1 class="dark-aqua centered">Interaktive Medien</h1> 
+                    <p class="subtitle light-blue-grey centered">            
+                        Bei den Interaktiven Medien werden Lernprogramme und Apps für den Bereich Verteidigung und Ausbildung des VBS erstellt. Für die ganzen Filmproduktionen des ZEM werden in dieser Abteilung zudem die DVDs programmiert und bei kleineren Auflagen auch gleich gebrannt und bedruckt. 
+                    </p>                
+                </div>
+            </div>  
+            
+            <label for="openIAM">
+                <div class="closeoverlay">
+                    <span class="icon icon-icon-close"></span>
+                </div>
+            </label>
+        </section>
+        
+        <section id="overlayMT" class="overlay">
+            <div class="overlaywrapper col-12 div-center animated fadeInUp">
+                <div class="sectionhead col-8 div-center">
+                    <h1 class="dark-aqua centered">Mediathek</h1> 
+                    <p class="subtitle light-blue-grey centered">            
+                        Die Mediathek ist das umfassende visuelle Gedächtnis des ZEM. In der Mediendatenbank mit Fotos und Videos werden alle aktuellen Produktionen des ZEM aufbereitet und auf den entsprechenden Plattformen veröffentlicht.
+                    </p>                
+                </div>
+            </div>  
+            
+            <label for="openMT">
+                <div class="closeoverlay">
+                    <span class="icon icon-icon-close"></span>
+                </div>
+            </label>
+        </section>
+        
+        <section id="overlayPM" class="overlay">
+            <div class="overlaywrapper col-12 div-center animated fadeInUp">
+                <div class="sectionhead col-8 div-center">
+                    <h1 class="dark-aqua centered">Printmedien</h1> 
+                    <p class="subtitle light-blue-grey centered">            
+                        Die Printmedien erstellen Produktionen für alle möglichen Bereiche des VBS. Von der Beratung über die Konzeption bis hin zur Lieferung der Daten an die Druckerei wird hier alles gemacht. 
+                    </p>                
+                </div>
+            </div>  
+            
+            <label for="openPM">
+                <div class="closeoverlay">
+                    <span class="icon icon-icon-close"></span>
+                </div>
+            </label>
+        </section>
+        
+        
+        
         <section id="mdme">
             <div class="sectionhead col-8 div-center">
                 <img height="70" src="img/content/icons/icon-me.svg">
@@ -461,7 +538,7 @@
             </div> 
             
             <div id="aboutme" class="col-8 div-center">
-                <p class="subtitle light-blue-grey wow fadeInUp">
+                <p class="subtitle light-blue-grey animated fadeInUp">
                     Meine Lehre habe ich im Jahr 2012 in der BiCT AG angefangen und dort eine zweijährige Grundausbildung in verschiedenen Programmen und Projekten sowie in visueller Kommunikation und Marketing erhalten. Als es Mitte des zweiten Lehrjahres an in die Bewerbungsphase ging, sprach mich der Stellenbeschrieb des ZEM sofort an, so dass ich mich beworben habe und zu einem Bewerbungsgespräch eingeladen wurde. Wenige Zeit später habe ich schliesslich die erfreuliche Nachricht erhalten, dass ich ab Sommer 2014 meine Lehre im Zentrum elektronische Medien weiterführen kann.
                 </p>
                 <p class="subtitle light-blue-grey wow fadeInUp">
@@ -507,7 +584,7 @@
                     </p>
                 </div>
             
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
             <script type="text/javascript">
                 // When the window has finished loading create our google map below
                 google.maps.event.addDomListener(window, 'load', init);
@@ -582,7 +659,8 @@
             
             <section class="footer-notice">
                 <p class="text16 col-8 light div-center centered light-grey">
-                    Diese Website basiert vollständig auf den modernen Webtechnologien HTML5, CSS3 und Javascript / jQuery. Beim Erstellen kam der CSS-Compiler SASS zum Einsatz. 
+                    Diese Webseite basiert vollständig auf den modernen Webtechnologien HTML5, CSS3 und Javascript / jQuery. <br>
+                    Beim Erstellen kam der CSS-Compiler Sass zum Einsatz. 
                 </p>
             </section>
             

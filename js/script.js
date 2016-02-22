@@ -1,7 +1,8 @@
-/*jQuery(window).load(function() {
-	jQuery("#preloader").delay(100).fadeOut("slow");
+jQuery(window).load(function() {
+	jQuery("#mdloader").delay(500).fadeOut("slow");
+    //$(".loaderbar").addClass("loaded");
+	$("body").removeClass("noscroll");
 })
-*/
 
 
 
@@ -16,6 +17,13 @@ jQuery(document).ready(function($) {
     
     $('.text-extender').click( function() {
         $("#aboutme").addClass("text-visible");
+    } );
+    
+    $('.overlay').click( function() {
+        $(".overlaywrapper").addClass("animated");
+    } );
+    $('.closeoverlay').click( function() {        
+        $(".overlaywrapper").removeClass("animated");
     } );
 				
 });
