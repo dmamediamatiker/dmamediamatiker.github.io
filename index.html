@@ -8,19 +8,31 @@
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/style.css">
         
+        
         <!--<script src="js/jquery-2.2.0.min.js"></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="js/jquery.inview.js"></script>
+        
+        <script src="js/counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+
         <script src="js/wow.min.js"></script>
         <script>
             videojs.options.flash.swf = "js/video-js/video-js.swf"
         </script>
         <script src="js/script.js"></script>
         
+        <script>
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+            });
+        </script>
         
         <script>
             // Initialisierung der wow.js-Plugins.
-              new WOW().init();
+            new WOW().init();
         </script>
         
         <script>
@@ -34,6 +46,11 @@
         
     </head>
     <body>
+        
+        <input type="checkbox" id="openIAM" class="hidden">
+        <input type="checkbox" id="openMT" class="hidden">
+        <input type="checkbox" id="openPM" class="hidden">
+        
         <header>
             <div class="fullwidth div-center">
                 <div id="header-logo" class="col-4">
@@ -58,7 +75,7 @@
                     Scrolle weiter oder klicke auf das Icon um mehr zu erfahren.
                 </p>
                 <div class="animated bounce infinite centered">
-                    <span class="scrolldown-arrow icon-icon-arrow-down"></span>
+                    <span class="scrolldown-arrow icon icon-icon-arrow-down"></span>
                 </div>
             </div>
         
@@ -67,7 +84,7 @@
         <section id="mdwie">
             <div class="sectionhead col-8 div-center">
                 <h1 class="dark-aqua centered">Wie wirst du MediamatikerIn?</h1> 
-                <p class="subtitle light-blue-grey centered">
+                <p class="subtitle light-blue-grey centered">                    
                     Du interessierst dich für eine Lehre als MediamatikerIn? Eine gute Wahl! MediamatikerIn ist ein Beruf mit Zukunft. Dank dem breiten Fachwissen, welches du dir über die vier Lehrjahre aneignest, stehen dir für deine Zukunft viele unterschiedliche Wege offen. Als kleiner Einblick vorneweg findest du hier ein Video, das die Arbeiten als MediamatikerIn beim Bund im Allgemeinen aufzeigt. 
                 </p>
             </div>
@@ -90,11 +107,9 @@
                                 </video>
                                 
                             </div>
-                            
-                            <!--<img src="img/screenshot-video.png" widh="780" height="438">-->
                             <p class="text16 light centered light-grey">
-                            Dieses Video wurde von Mediamatik-Lernenden erstellt. Weitere Infos dazu findest du <a class="lightlink"  href="http://www.stelle.admin.ch/berufseinstieg/00755/01139/index.html?lang=de" alt="Lernendenvideos Bund" target="_blank">hier</a>.
-                        </p>
+                                Dieses Video wurde von Mediamatik-Lernenden erstellt. Weitere Infos dazu findest du <a class="lightlink"  href="http://www.stelle.admin.ch/berufseinstieg/00755/01139/index.html?lang=de" alt="Lernendenvideos Bund" target="_blank">hier</a>.
+                            </p>
                         </div>
                         
                     </div>
@@ -188,7 +203,7 @@
                 </div>
                 
                 <div class="external-button col-4">
-                    <h2 class="light-blue-grey"><a href="http://www.stelle.admin.ch/berufseinstieg/00755/00848/00850/00867/?lang=de" alt="Stellenportal Bund MediamatikerIn" target="_blank">Stellenportal Bund</a></h2>             
+                    <h2 class="light-blue-grey"><a href="http://www.berufsberatung.ch/dyn/1199.aspx?id=4034" target="_blank">Berufsberatung.ch</a></h2>             
                 </div>
             
                 <div class="clearfix"></div>
@@ -251,7 +266,7 @@
                 <div class="timeline-circle div-center wow fadeInUp"></div>
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-box col-6 div-center wow fadeInUp">
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
                     <img height="70" src="img/content/icons/icon-selbststaendig.svg">
                     <h2 class="centered light-blue-grey uppercase">Eingnungstest</h2>
                     <p lang="de" class="text16 centered light light-blue-grey">
@@ -261,7 +276,7 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-box col-6 div-center wow fadeInUp">
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
                     <img height="70" src="img/content/icons/icon-selbststaendig.svg">
                     <h2 class="centered light-blue-grey uppercase">Bewerbung</h2>
                     <p lang="de" class="text16 centered light light-blue-grey">
@@ -272,7 +287,7 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-box col-6 div-center wow fadeInUp">
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
                     <img height="70" src="img/content/icons/icon-selbststaendig.svg">
                     <h2 class="centered light-blue-grey uppercase">Lehrstelle BiCT</h2>
                     <p lang="de" class="text16 centered light light-blue-grey">
@@ -289,7 +304,7 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-box col-6 div-center wow fadeInUp">
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
                     <img height="70" src="img/content/icons/icon-selbststaendig.svg">
                     <h2 class="centered light-blue-grey uppercase">Zweijährige Grundbildung</h2>
                     <p lang="de" class="text16 centered light light-blue-grey">
@@ -299,7 +314,7 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-box col-6 div-center wow fadeInUp">
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
                     <img height="70" src="img/content/icons/icon-selbststaendig.svg">
                     <h2 class="centered light-blue-grey uppercase">Bewerbung / Workbook</h2>
                     <p lang="de" class="text16 centered light light-blue-grey">
@@ -359,18 +374,18 @@
                 
                 <div class="numbers-wrapper col-10 div-center">
                     
-                    <div class="number-box col-4">
-                        <h2 class="countup-number-big centered">7208</h2>
+                    <div class="inline-box col-4">
+                        <h2 class="countup-number-big centered counter">7208</h2>
                         <h2 class="centered light-blue-grey uppercase">Kilometer</h2>
                             <p lang="de" class="text16 centered light light-blue-grey">
                                 Das ist die Strecke, die ich über zwei Lehrjahre mit dem ÖV von mir Zuhause ins ZEM und zurück gefahren bin. Die Strecke entspricht der Entfernung vom Bahnhof Bern <a class="darklink" href="https://goo.gl/cjEc7z" alt="Link zu besagter Stelle auf Google Maps." target="_blank">auf einen Highway</a> nordöstlich von Charlestown, South Carolina USA.
                             </p>                    
                     </div>
                     
-                    <div class="number-spacer col-2"></div>
+                    <div class="inline-spacer col-2"></div>
                     
-                    <div class="number-box col-4">
-                        <h2 class="countup-number-big centered">334</h2>
+                    <div class="inline-box col-4">
+                        <h2 class="countup-number-big centered counter">334</h2>
                         <h2 class="centered light-blue-grey uppercase">Stunden</h2>
                             <p lang="de" class="text16 centered light light-blue-grey">
                                 Das ist die Zeit, die alle Fahrten zusammen dauerten. In dieser Zeit könnte man alle Harry Potter Filme 17 Mal komplett anschauen oder den Song „We are the World“ von USA for Africa 2834 Mal hören. 
@@ -379,10 +394,203 @@
                 
                 </div>
                 
+            </section>        
+        
+        
+        
+        
+        </section>
+        
+        <section id="mdbereiche">
+            <div class="sectionhead col-8 div-center">
+                <h1 class="dark-aqua centered">Das ZEM und seine Bereiche</h1> 
+                <p class="subtitle light-blue-grey centered">            
+                    Das Zentrum elektronische Medien ist in sechs verschiedene Bereiche aufgeteilt. In drei davon kannst du während deiner Lehrzeit in Form von einer mehrmonatigen Stage einen Einblick erhalten. Wähle einfach den Bereich aus, über den du mehr wissen möchtest und du erfährst die wichtigsten Informationen zu dem jeweiligen Bereich.
+                </p>
+            </div>
+            
+            <div class="bereiche-wrapper col-12 div-center">
+                
+                
+                <label class="box-label" for="openIAM">
+                <div class="inline-box border col-4">
+                    <img height="70" src="img/content/icons/icon-iam.svg">
+                    <h2 class="centered light-blue-grey uppercase">Interaktive Medien</h2>
+                        <p lang="de" class="text16 centered light light-blue-grey">
+                            In der IAM werden Lernmedien wie Apps für die Ausbildung in der Armee erstellt und für verschiedene Endgeräte optimiert.
+                        </p>                    
+                </div></label><!--
+
+                --><label class="box-label" for="openMT">
+                <div class="inline-box border col-4" style="margin: 0px 8px 0px 8px;">
+                    <img height="70" src="img/content/icons/icon-mt.svg">
+                    <h2 class="centered light-blue-grey uppercase">Mediathek</h2>
+                        <p lang="de" class="text16 centered light light-blue-grey">
+                            Die Mediathek beschäftigt sich mit der Archivierung dem Vertrieb sowie der Aufbereitung von Bild- und Videomaterial analog und im Web.
+                        </p>                    
+                </div></label><!--
+
+                --><label class="box-label" for="openPM">
+                <div class="inline-box border col-4" style="margin: 0px 0px 0px 8px;">
+                    <img height="70" src="img/content/icons/icon-pm.svg">
+                    <h2 class="centered light-blue-grey uppercase">Printmedien</h2>
+                        <p lang="de" class="text16 centered light light-blue-grey">
+                            Die Printmedien sind die Anlaufstelle für alles was mit Produkten für den Druck zu tun hat. Es entstehen Broschüren, Flyer und vieles mehr.
+                        </p>                    
+                </div></label>
+                
+            </div>
+            
+        </section>
+        
+        <section id="mdme">
+            <div class="sectionhead col-8 div-center">
+                <img height="70" src="img/content/icons/icon-me.svg">
+                <h1 class="dark-aqua centered">Über mich</h1> 
+                <p class="subtitle light-blue-grey centered">            
+                    Hallo. Ich bin Stefan und ich bin Mediamatiker im vierten Lehrjahr im ZEM. Diese Website erstellte ich im Rahmen meiner praktischen Abschlussarbeit (IPA) und möchte dir damit das Berufsbild Mediamatiker mit dem Hauptaugenmerk aufs ZEM näherbringen. Ich hoffe, dass mir das gelungen ist. 
+                </p>
+                
+                <div class="col-8 text-extender">
+                    <p class="text16 light centered">
+                        Möchtest du noch etwas mehr über mich und meine Zeit im ZEM erfahren? <br>
+                        Dann klicke hier um den Text zu erweitern. 
+                    </p>
+                </div>
+                
+            </div> 
+            
+            <div id="aboutme" class="col-8 div-center">
+                <p class="subtitle light-blue-grey wow fadeInUp">
+                    Meine Lehre habe ich im Jahr 2012 in der BiCT AG angefangen und dort eine zweijährige Grundausbildung in verschiedenen Programmen und Projekten sowie in visueller Kommunikation und Marketing erhalten. Als es Mitte des zweiten Lehrjahres an in die Bewerbungsphase ging, sprach mich der Stellenbeschrieb des ZEM sofort an, so dass ich mich beworben habe und zu einem Bewerbungsgespräch eingeladen wurde. Wenige Zeit später habe ich schliesslich die erfreuliche Nachricht erhalten, dass ich ab Sommer 2014 meine Lehre im Zentrum elektronische Medien weiterführen kann.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp">
+                    Während meiner Zeit im ZEM durfte ich viele neue Erfahrungen sammeln. Ich schätze das moderne Arbeitsumfeld und die Infrastruktur. Ausserdem finde ich es super, dass ich in verschiedene Bereiche reinschauen konnte und mich auch bei verschiedenen Projekten selbstständig und im Team beteiligen konnte.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp">
+                     Ein absolutes Highlight waren die zwei Einsätze bei denen ich jeweils ein Filmteam begleiten und unterstützen durfte. Beim ersten Einsatz drehten wir im Auftrag der Spitzensport Rekrutenschule bei der Skisprungschanze in Einsiedeln. Dort lernte ich unter anderem Simon Amman kennen und lernte wie man ein Filmset für ein Interview aufbaut und man eindrückliche Momentaufnahmen einfängt.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp">
+                    Bei meinem zweiten Einsatz durfte ich in Wangen an der Aare bei einer Katastrophenübung mit dabei sein. Besonders spannend hierbei war für mich die Tatsache, dass ich gemeinsam mit zwei Berufspiloten in einem Super Puma der Schweizer Armee bei der ganzen Übung mitten im Geschehen dabei sein und die ganzen Eindrücke mit der Kamera festhalten konnte.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp">
+                    Nebst diesen beiden Anlässen durfte ich gemeinsam mit anderen Lernenden beim Jahresanlass der Logistikbasis der Armee in Grenchen mithelfen. Dies war sehr eindrücklich, da das ganze eine riesige logistische Herausforderung darstellte, weil alle Mitarbeiter aus der ganzen Schweiz bei diesem Anlass teilnahmen.            
+                </p>
+                            
+            </div>
+        </section>
+        
+        
+        <section id="mdfooter">
+            <div class="sectionhead col-8 div-center">
+                <h1 class="dark-aqua centered">Zentrum elektronische Medien</h1> 
+                <p class="subtitle light-blue-grey centered">            
+                    Das Zentrum elektronische Medien (ZEM) ist das zentrale Medienhaus des Bundesamtes für Verteidigung, Bevölkerungsschutz und Sport (VBS). Im ZEM werden Produkte und Dienstleistungen in den Bereichen Ausbildung und Kommunikation erstellt. In den Bereichen Audiovisuelle Medien, Foto, Interaktive Medien, Mediathek und Print werden Lösungen für jeden Kunden passend erarbeitet und umgesetzt.<br>
+                    Das ZEM wertet mit einer modernen Infrastruktur, einem angenehmen Arbeitsumfeld und interessanten Projekten auf. 
+
+                </p>
+            </div>
+            
+            <div id="map-wrapper">
+            
+            <div id="map">
+            </div>
+                
+                <div class="map-overlapping col-6 border">
+                    <img height="70" src="img/content/icons/icon-marker.svg">
+                    <h2 class="centered light-blue-grey uppercase">Zentrum elektronische Medien</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Verteidigung<br>
+                        Zentrum elektronische Medien<br>
+                        Stauffacherstrasse 65/Geb 14<br>
+                        CH-3003 Bern<br>
+                    </p>
+                </div>
+            
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+            <script type="text/javascript">
+                // When the window has finished loading create our google map below
+                google.maps.event.addDomListener(window, 'load', init);
+
+                function init() {
+                    // Basic options for a simple Google Map
+                    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                    var mapOptions = {
+                        // How zoomed in you want the map to start at (always required)
+                        zoom: 16,
+                        disableDefaultUI: true,
+                        scrollwheel: false,
+                        
+
+
+                        // The latitude and longitude to center the map (always required)
+                        center: new google.maps.LatLng(46.966881, 7.454935), // New York
+
+                        // How you would like to style the map. 
+                        // This is where you would paste any style found on Snazzy Maps.
+                        styles: [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"landscape.natural.terrain","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#53a8b6"},{"visibility":"on"}]}]
+                    };
+
+                    // Get the HTML DOM element that will contain your map 
+                    // We are using a div with id="map" seen below in the <body>
+                    var mapElement = document.getElementById('map');
+
+                    // Create the Google Map using our element and options defined above
+                    var map = new google.maps.Map(mapElement, mapOptions);
+
+                    // Let's also add a marker while we're at it
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(46.966881, 7.454935),
+                        map: map,
+                        icon: 'img/layout/marker-solid.png',
+                        title: 'Zentrum elekronische Medien ZEM'
+                    });
+                }
+            </script>
+                
+            <div class="clearfix"></div>
+                
+            </div>
+            
+            
+            <div class="more-info col-8 div-center">
+                <p class="subtitle light-blue-grey centered">
+                    Weitere Informationen hierzu findest du auf den folgenden Webseiten:
+                </p>
+            </div>
+            
+            
+            <section class="link-buttons col-12 div-center">
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="https://www.zem.ch" target="_blank">Website ZEM</a></h2>             
+                </div>
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="https://www.mediathek.admin.ch" target="_blank">mediathek.admin.ch</a></h2>             
+                </div>
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="https://vp.zem.ch" target="_blank">Videoportal</a></h2>             
+                </div>
+            
+                <div class="clearfix"></div>
+            
+            
+            
             </section>
-        
-        
-        
+            
+            <section class="footer-notice">
+                <p class="text16 col-8 light div-center centered light-grey">
+                    Diese Website basiert vollständig auf den modernen Webtechnologien HTML5, CSS3 und Javascript / jQuery. Beim Erstellen kam der CSS-Compiler SASS zum Einsatz. 
+                </p>
+            </section>
+            
+            <section class="footer-end">
+                <p class="text16 light centered light-grey">
+                    Diese Webseite wurde mit viel <span class="icon icon-icon-heart"></span> im ZEM erstellt. 
+                </p>
+            </section>
         
         
         </section>
@@ -405,7 +613,7 @@
                 </script>
                 <noscript><p><img src="//stats.zem.ch/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
             <!-- End Piwik Code -->
-        
+        <script src="js/jquery.inview.js"></script>
         <script src="js/video-js/video.min.js"></script>
     </body>
 </html>

@@ -51,6 +51,9 @@ p {
 .bg-light-grey {
   background: #eeeeee; }
 
+.border {
+  border: 1px solid #cdcccc; }
+
 /* - - - - - - - - - -
 
     Alle globalen Textformatierungen für verschiedene Formate und Grössen.
@@ -136,8 +139,8 @@ a {
       margin: -25px -40px -25px -40px;
       padding: 25px 40px 25px 40px; }
   .external-button h2:before {
-    font-family: 'icomoon';
-    content: "\e902";
+    font-family: 'iconzem';
+    content: "\64";
     color: #53a8b6;
     font-size: 18px;
     position: absolute;
@@ -150,11 +153,15 @@ a {
 .external-button:nth-child(3n+1) {
   margin-left: 0px; }
 
+.hidden {
+  display: none; }
+
 /*
     Diese Klasse ist dazu da, um am Anfang einer neuen Section den Titel und den kurzen Einleitungstext pasend zu positionieren.
 */
 .sectionhead {
-  padding: 200px 0px 100px 0px; }
+  padding: 200px 0px 100px 0px;
+  text-align: center; }
 
 /* - - - - - - - - - -
 
@@ -318,7 +325,6 @@ header {
   background: white;
   border-radius: 12px;
   padding: 30px 80px;
-  border: 1px solid #cdcccc;
   text-align: center; }
   .timeline-box img {
     margin-bottom: 20px; }
@@ -352,20 +358,91 @@ header {
   background: #eeeeee;
   padding-bottom: 100px; }
 
-.number-spacer {
+.inline-spacer {
   display: inline-block; }
 
-.number-box {
+.inline-box {
   display: inline-block;
   vertical-align: top;
   margin: 0px 10px;
-  padding: 25px; }
+  padding: 25px;
+  text-align: center; }
+  .inline-box img {
+    margin-bottom: 20px; }
 
-.number-box:nth-child(3n+1) {
+.inline-box:nth-child(3n+1) {
   margin-left: 0px; }
 
-.number-box:nth-child(3n+3) {
+.inline-box:nth-child(3n+3) {
   margin-right: 0px; }
+
+#mdbereiche {
+  padding-bottom: 100px; }
+
+.bereiche-wrapper .inline-box {
+  border-radius: 12px; }
+.bereiche-wrapper .box-label {
+  cursor: pointer;
+  display: inline-block; }
+.bereiche-wrapper label .inline-box:nth-child(3n+1) {
+  margin-left: 0px; }
+.bereiche-wrapper label .inline-box:nth-child(3n+3) {
+  margin-right: 0px; }
+
+#mdme {
+  background: #f8f8f8;
+  padding-bottom: 100px; }
+
+.text-extender {
+  margin: 80px 0px 0px 0px;
+  cursor: pointer; }
+
+#aboutme {
+  display: none; }
+  #aboutme p {
+    margin-bottom: 20px; }
+
+.text-visible {
+  display: block !important; }
+
+#mdfooter .subtitle br {
+  margin-bottom: 20px; }
+
+#map-wrapper {
+  position: relative; }
+
+#map {
+  width: 100%;
+  height: 550px;
+  margin-bottom: 180px; }
+
+.map-overlapping {
+  position: absolute;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: -10px;
+  z-index: 5;
+  border-radius: 12px;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: 0px 0px 36px 0px rgba(135, 135, 135, 0.42); }
+  .map-overlapping img {
+    margin-bottom: 20px; }
+
+.footer-notice {
+  padding: 50px 0px;
+  background: #565656; }
+
+.footer-end {
+  padding: 20px 0px;
+  background: #373737; }
+  .footer-end .icon-icon-heart {
+    color: #53a8b6; }
 
 .col-1 {
   width: 80px; }
@@ -449,33 +526,46 @@ header {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?6dspxr");
-  src: url("../fonts/icomoon.eot?6dspxr#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6dspxr") format("truetype"), url("../fonts/icomoon.woff?6dspxr") format("woff"), url("../fonts/icomoon.svg?6dspxr#icomoon") format("svg");
+  font-family: "iconzem";
+  src: url("../fonts/iconzem.eot");
+  src: url("../fonts/iconzem.eot?#iefix") format("embedded-opentype"), url("../fonts/iconzem.woff") format("woff"), url("../fonts/iconzem.ttf") format("truetype"), url("../fonts/iconzem.svg#iconzem") format("svg");
   font-weight: normal;
   font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+[data-icon]:before {
+  font-family: "iconzem" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
   speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "iconzem" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-icon-arrow-down:before {
-  font-size: 24px;
-  content: "\e900"; }
+  content: "\61"; }
 
 .icon-icon-close:before {
-  content: "\e901"; }
+  content: "\62"; }
+
+.icon-icon-heart:before {
+  content: "\63"; }
 
 .icon-icon-link:before {
-  content: "\e902"; }
+  content: "\64"; }
 
 .animatedsvg .icon-ballon-path-outline {
   stroke-dasharray: 250;
