@@ -1,10 +1,16 @@
 jQuery(window).load(function() {
-	jQuery("#mdloader").delay(500).fadeOut("slow");
-    //$(".loaderbar").addClass("loaded");
-	$("body").removeClass("noscroll");
-})
-
-
+	jQuery("#mdloader").delay(1000).fadeOut("slow", function(){
+                                            
+        $("body").removeClass("noscroll");
+        $("#mdhome-skyline").removeClass("vhidden"); 
+        $("#mdhome-skyline").addClass("fadeIn");
+        $("#mdhometext").removeClass("vhidden"); 
+        $("#mdhometext").addClass("fadeInUp"); 
+        $(".scrollhint").addClass("bounce");
+        $("#skyline").addClass("animatedskyline");
+    });
+    
+});
 
 jQuery(document).ready(function($) {
     
@@ -20,10 +26,13 @@ jQuery(document).ready(function($) {
     } );
     
     $('.overlay').click( function() {
-        $(".overlaywrapper").addClass("animated");
+        $(".overlaywrapper").addClass("fadeInUp");
     } );
     $('.closeoverlay').click( function() {        
-        $(".overlaywrapper").removeClass("animated");
+        $(".overlaywrapper").removeClass("fadeInUp");
+    } );
+    $('.footercloseoverlay').click( function() {        
+        $(".overlaywrapper").removeClass("fadeInUp");
     } );
 				
 });
@@ -36,10 +45,9 @@ $(document).ready(function(){
        
         if (visible == true) {
             // element is now visible in the viewport
-            $(this).addClass('animatedsvg');
+            $(this).addClass('animatedballon');
         }
     });
-        //$('.myclass').trigger('inview');
     
 });
 

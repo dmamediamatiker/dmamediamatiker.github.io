@@ -21,7 +21,7 @@
 		stroke:#54a8b6;
 	}
 
-	.st3{
+	#lb-schnur{
 		stroke-dasharray: 114;
 		stroke-dashofset: 0;
 		-webkit-animation: dash 3s ease infinite;

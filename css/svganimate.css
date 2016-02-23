@@ -1,0 +1,363 @@
+@charset "UTF-8";
+/*
+    Animations CSS für die SVG-Animationen, damit das normale CSS-File nicht zu unübersichtlich wird.
+*/
+.animatedballon .icon-ballon-path-outline {
+  stroke-dasharray: 250;
+  stroke-dashofset: 0;
+  animation: anim-icon-ballon-outline 3s ease;
+  -webkit-animation: ballon-outer 3s ease infinite;
+  stroke: #54a8b6; }
+.animatedballon .icon-ballon-path-reflection {
+  stroke-dasharray: 62;
+  stroke-dashofset: 0;
+  -webkit-animation: dash 3s ease infinite;
+  animation: reflection 3s ease;
+  stroke: #54a8b6; }
+.animatedballon .icon-ballon-path-ventil {
+  stroke-dasharray: 52;
+  stroke-dashofset: 0;
+  -webkit-animation: ventil 3s ease infinite;
+  animation: ventil 3s ease;
+  stroke: #54a8b6; }
+.animatedballon .icon-ballon-path-schnur {
+  stroke-dasharray: 114;
+  stroke-dashofset: 0;
+  -webkit-animation: dash 3s ease infinite;
+  animation: band 3s ease;
+  stroke: #54a8b6; }
+@keyframes anim-icon-ballon-outline {
+  from {
+    stroke-dashoffset: 250; }
+  10% {
+    stroke-dashoffset: 250; }
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes ventil {
+  from {
+    stroke-dashoffset: 52; }
+  10% {
+    stroke-dashoffset: 52; }
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes reflection {
+  from {
+    stroke-dashoffset: 62; }
+  10% {
+    stroke-dashoffset: 62; }
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes band {
+  from {
+    stroke-dashoffset: 114; }
+  10% {
+    stroke-dashoffset: 114; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-mac-body {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 213;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: sky-mac-body 3s ease;
+  -webkit-animation: sky-mac-body 3s ease; }
+@keyframes sky-mac-body {
+  from {
+    stroke-dashoffset: 213; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-mac-monitor {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 140;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: sky-mac-monitor 3s ease;
+  -webkit-animation: sky-mac-monitor 3s ease; }
+@keyframes sky-mac-monitor {
+  from {
+    stroke-dashoffset: 140; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-mac-mtn {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 75;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-mac-mtn 3s ease;
+  -webkit-animation: sky-mac-mtn 3s ease; }
+@keyframes sky-mac-mtn {
+  from {
+    stroke-dashoffset: 75; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-printer-paper {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 78;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-printer-paper 3s ease;
+  -webkit-animation: sky-printer-paper 3s ease; }
+@keyframes sky-printer-paper {
+  from {
+    stroke-dashoffset: 78; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-printer-body {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 89;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-printer-body 3s ease;
+  -webkit-animation: sky-printer-body 3s ease; }
+@keyframes sky-printer-body {
+  from {
+    stroke-dashoffset: 89; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-printer-button {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 13;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-printer-button 3s ease;
+  -webkit-animation: sky-printer-button 3s ease; }
+@keyframes sky-printer-button {
+  from {
+    stroke-dashoffset: 13; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-printer-back {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 70;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-printer-back 3s ease;
+  -webkit-animation: sky-printer-back 3s ease; }
+@keyframes sky-printer-back {
+  from {
+    stroke-dashoffset: 70; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-cam-body {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 117;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  animation: cam-body 3s ease;
+  -webkit-animation: cam-body 3s ease; }
+@keyframes cam-body {
+  from {
+    stroke-dashoffset: 117; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-cam-inner {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 43;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  animation: sky-cam-inner 3s ease;
+  -webkit-animation: sky-cam-inner 3s ease; }
+@keyframes sky-cam-inner {
+  from {
+    stroke-dashoffset: 43; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-cd-inner {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 17;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-cd-inner 3s ease;
+  -webkit-animation: sky-cd-inner 3s ease; }
+@keyframes sky-cd-inner {
+  from {
+    stroke-dashoffset: 17; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-cd-outer {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 66;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-cd-outer 3s ease;
+  -webkit-animation: sky-cd-outer 3s ease; }
+@keyframes sky-cd-outer {
+  from {
+    stroke-dashoffset: 66; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-linie-left {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 159;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  animation: sky-linie-left 3s ease;
+  -webkit-animation: sky-linie-left 3s ease; }
+@keyframes sky-linie-left {
+  from {
+    stroke-dashoffset: 159; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-linie-right {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 49;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  animation: sky-linie-right 3s ease;
+  -webkit-animation: sky-linie-right 3s ease; }
+@keyframes sky-linie-right {
+  from {
+    stroke-dashoffset: 49; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-plant-pot {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 53;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-plant-pot 3s ease;
+  -webkit-animation: sky-plant-pot 3s ease; }
+@keyframes sky-plant-pot {
+  from {
+    stroke-dashoffset: 53; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-plant-pot-top {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 49;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  animation: sky-plant-pot-top 3s ease;
+  -webkit-animation: sky-plant-pot-top 3s ease; }
+@keyframes sky-plant-pot-top {
+  from {
+    stroke-dashoffset: 49; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-plant-leaf1 {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 22;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: sky-plant-leaf1 3s ease;
+  -webkit-animation: sky-plant-leaf1 3s ease; }
+@keyframes sky-plant-leaf1 {
+  from {
+    stroke-dashoffset: 22; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-plant-leaf2 {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 24;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: sky-plant-leaf2 3s ease;
+  -webkit-animation: sky-plant-leaf2 3s ease; }
+@keyframes sky-plant-leaf2 {
+  from {
+    stroke-dashoffset: 24; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-plant-leaf3 {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 10;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: sky-plant-leaf3 3s ease;
+  -webkit-animation: sky-plant-leaf3 3s ease; }
+@keyframes sky-plant-leaf3 {
+  from {
+    stroke-dashoffset: 10; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-plant-leaf4 {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 13;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: sky-plant-leaf4 3s ease;
+  -webkit-animation: sky-plant-leaf4 3s ease; }
+@keyframes sky-plant-leaf4 {
+  from {
+    stroke-dashoffset: 13; }
+  to {
+    stroke-dashoffset: 0; } }
+.animatedskyline #sky-plant-leaf5 {
+  fill: none;
+  stroke: #53A8B6;
+  stroke-dasharray: 16;
+  stroke-dashofset: 0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: sky-plant-leaf5 3s ease;
+  -webkit-animation: sky-plant-leaf5 3s ease; }
+@keyframes sky-plant-leaf5 {
+  from {
+    stroke-dashoffset: 16; }
+  to {
+    stroke-dashoffset: 0; } }
+
+/*# sourceMappingURL=svganimate.css.map */

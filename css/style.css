@@ -156,6 +156,9 @@ a {
 .hidden {
   display: none; }
 
+.vhidden {
+  visibility: hidden; }
+
 .noscroll {
   overflow: hidden; }
 
@@ -173,11 +176,10 @@ a {
 - - - - - - - - - - */
 #mdloader {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  z-index: 20;
-  background: #3a4750; }
+  height: 100%;
+  position: fixed;
+  z-index: 30;
+  background: #3a4750 url(../img/layout/md-loader-pattern.png); }
   #mdloader .fullwidth {
     position: fixed;
     left: 0px;
@@ -247,7 +249,8 @@ header {
   transform: translateY(-50%); }
 
 #mdhome-skyline {
-  margin: 0px auto 30px auto; }
+  margin: 0px auto 30px auto;
+  animation-delay: 0.2s; }
 
 #scrolldown {
   position: absolute;
@@ -264,6 +267,9 @@ header {
     margin: -20px;
     padding: 20px;
     cursor: pointer; }
+  #scrolldown .scrollhint {
+    animation-delay: 8s;
+    animation-iteration-count: 3; }
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-transform: translate3d(0, 0, 0);
@@ -445,6 +451,23 @@ header {
 .bereiche-wrapper label .inline-box:nth-child(3n+3) {
   margin-right: 0px; }
 
+.overlay-button {
+  background: #53a8b6;
+  border: 2px solid #53a8b6;
+  margin-top: 20px !important;
+  border-radius: 12px;
+  padding: 4px;
+  transition: 0.5s ease; }
+  .overlay-button h2 {
+    font-size: 20px;
+    color: white; }
+
+.overlay-button:hover {
+  background: white;
+  border: 2px solid #53a8b6; }
+  .overlay-button:hover h2 {
+    color: #53a8b6; }
+
 .overlay {
   position: fixed;
   overflow: hidden;
@@ -452,7 +475,7 @@ header {
   top: 0px;
   width: 100%;
   height: 100%;
-  z-index: 20;
+  z-index: 30;
   background: rgba(0, 0, 0, 0.89);
   overflow-y: scroll; }
 
@@ -461,6 +484,27 @@ header {
   background: #eeeeee; }
   .overlaywrapper .sectionhead {
     padding: 100px 0px; }
+
+.overlay-section {
+  padding: 100px 0px;
+  border-top: 1px solid #d2d2d2; }
+
+.overlay-section:last-child {
+  border-bottom: 1px solid #d2d2d2; }
+
+.overlay-text {
+  display: inline-block; }
+  .overlay-text br {
+    margin-bottom: 20px; }
+
+.overlay-title {
+  vertical-align: top;
+  display: inline-block; }
+
+.overlayfooter {
+  background: #3a4750;
+  padding: 50px;
+  margin-bottom: 100px !important; }
 
 .closeoverlay {
   position: fixed;
@@ -477,6 +521,9 @@ header {
     bottom: 0;
     left: 0;
     right: 0; }
+
+.footercloseoverlay {
+  cursor: pointer; }
 
 input#openIAM[type="checkbox"]:checked ~ #overlayIAM {
   display: block; }
@@ -528,8 +575,7 @@ input#openPM[type="checkbox"]:checked ~ #overlayPM {
   background: white;
   padding: 20px;
   text-align: center;
-  font-size: 2em;
-  box-shadow: 0px 0px 36px 0px rgba(135, 135, 135, 0.42); }
+  font-size: 2em; }
   .map-overlapping img {
     margin-bottom: 20px; }
 
@@ -666,58 +712,6 @@ input#openPM[type="checkbox"]:checked ~ #overlayPM {
 .icon-icon-link:before {
   content: "\64"; }
 
-.animatedsvg .icon-ballon-path-outline {
-  stroke-dasharray: 250;
-  stroke-dashofset: 0;
-  animation: anim-icon-ballon-outline 3s ease;
-  -webkit-animation: ballon-outer 3s ease infinite;
-  stroke: #54a8b6; }
-.animatedsvg .icon-ballon-path-reflection {
-  stroke-dasharray: 62;
-  stroke-dashofset: 0;
-  -webkit-animation: dash 3s ease infinite;
-  animation: reflection 3s ease;
-  stroke: #54a8b6; }
-.animatedsvg .icon-ballon-path-ventil {
-  stroke-dasharray: 52;
-  stroke-dashofset: 0;
-  -webkit-animation: ventil 3s ease infinite;
-  animation: ventil 3s ease;
-  stroke: #54a8b6; }
-.animatedsvg .icon-ballon-path-schnur {
-  stroke-dasharray: 114;
-  stroke-dashofset: 0;
-  -webkit-animation: dash 3s ease infinite;
-  animation: band 3s ease;
-  stroke: #54a8b6; }
-@keyframes anim-icon-ballon-outline {
-  from {
-    stroke-dashoffset: 250; }
-  10% {
-    stroke-dashoffset: 250; }
-  to {
-    stroke-dashoffset: 0; } }
-@keyframes ventil {
-  from {
-    stroke-dashoffset: 52; }
-  10% {
-    stroke-dashoffset: 52; }
-  to {
-    stroke-dashoffset: 0; } }
-@keyframes reflection {
-  from {
-    stroke-dashoffset: 62; }
-  10% {
-    stroke-dashoffset: 62; }
-  to {
-    stroke-dashoffset: 0; } }
-@keyframes band {
-  from {
-    stroke-dashoffset: 114; }
-  10% {
-    stroke-dashoffset: 114; }
-  to {
-    stroke-dashoffset: 0; } }
 /*
   Player Skin Designer for Video.js
   http://videojs.com
