@@ -20,12 +20,25 @@ jQuery(window).load(function() {
 */
 jQuery(document).ready(function($) {
     
-
+    // Mit der folgenden Funktion wird die Seite bis zu einem gewünschten Element (in diesem Fall dem #mdwie) gescrollt, wenn auf den kleinen Pfeil auf dem Startscreen geklickt wird. Der Scrollvorgang wird dabei animiert.
     $(".scrolldown-arrow").click(function (){
         $('html, body').animate({
             scrollTop: $("#mdwie").offset().top
         }, 1000);
-    });
+    });    
+    
+    // Mit dieser Funktion wird der Hintergrund der Navigationsleiste von transparent zu einem halbtranspartenten Weiss umgestellt, wenn der User eine gewisse Position gescrollt hat.
+    $(window).scroll(function(){
+        // Bei einer Scrollhöhe von über 1000px wird die Funktion ausgelöst und der Hintergrund eingeblendet. Die Einblendanimation läuft über css.
+        if($(window).scrollTop() >= 1000){
+            $("#mdheader").css("background-color","rgba(255,255,255,0.75)");
+        }
+        // Scrollt der Nutzer wieder nach oben und an eine Scrollposition kleiner als 1000px, wird der Hintergrund wieder ausgeblendet.
+        else {
+            $("#mdheader").css("background-color","rgba(0,0,0,0)");
+        }
+    });  
+    
     
     $('.text-extender').click( function() {
         $("#aboutme").addClass("text-visible");
@@ -34,7 +47,7 @@ jQuery(document).ready(function($) {
     $('.overlay').click( function() {
         $(".overlaywrapper").addClass("fadeInUp");
     } );
-    $('.closeoverlay').click( function() {        
+    $('.closeoverlay').click( function() {
         $(".overlaywrapper").removeClass("fadeInUp");
     } );
     $('.footercloseoverlay').click( function() {        
@@ -44,16 +57,11 @@ jQuery(document).ready(function($) {
 });
 
 $(document).ready(function(){
-    
-
-                
     $('.notanimated').bind('inview', function (event, visible) {
-       
+        // Wenn das Element im sichtbaren Bereich ist, wird ein Befehl ausgefüht. In diesem Fall habe ich die Klasse hinzugefügt, in der via css alle Einstellungen zur Animation definiert sind.
         if (visible == true) {
-            // element is now visible in the viewport
             $(this).addClass('animatedballon');
         }
     });
-    
 });
 
