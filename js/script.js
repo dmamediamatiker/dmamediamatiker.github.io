@@ -56,6 +56,8 @@ jQuery(document).ready(function($) {
 				
 });
 
+
+// Die Anweisungen für jQuery-Inview
 $(document).ready(function(){
     $('.notanimated').bind('inview', function (event, visible) {
         // Wenn das Element im sichtbaren Bereich ist, wird ein Befehl ausgefüht. In diesem Fall habe ich die Klasse hinzugefügt, in der via css alle Einstellungen zur Animation definiert sind.

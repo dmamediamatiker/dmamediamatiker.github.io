@@ -10,31 +10,11 @@
         <link rel="stylesheet" href="css/style.css">
         
         
-        <!--<script src="js/jquery-2.2.0.min.js"></script>-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>       
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/counterup.min.js"></script>    
-        <script src="js/wow.min.js"></script>
-        <script>
-            //videojs.options.flash.swf = "js/video-js/video-js.swf"
-        </script>
+        <!-- read the licenses of the used plugins here: -->
+        <script src="plugin-licenses.txt"></script>
         
-        <script>           
-            //Initialisieren des jQuery CountUp-Plugins
-            jQuery(document).ready(function() {
-                $('.counter').counterUp({
-                    delay: 10,
-                    time: 2000
-                });
-            });            
-        </script>
         
-        <script>    
-            // Initialisierung des wow.js-Plugins.
-            new WOW().init();
-        </script>
         
-        <script src="js/script.js"></script>
         
     </head>
     <body class="noscroll">
@@ -327,7 +307,7 @@
                     <img height="70" src="img/content/icons/icon-eignungstest.svg">
                     <h2 class="centered light-blue-grey uppercase">Eingnungstest</h2>
                     <p lang="de" class="text16 centered light light-blue-grey">
-                        Bevor du dich für eine Lehre als MediamatikerIn bewirbst, machst du einen Eignungstest. Hierbei gibt es verschiedene. Für die Lehre in der BiCT AG brauchst du den Eignungstest der  ICT Berufsbildung Bern Mediamatik. Mehr Infos findest du hier.
+                        Bevor du dich für eine Lehre als MediamatikerIn bewirbst, machst du einen Eignungstest. Hierbei gibt es verschiedene. Für die Lehre in der BiCT AG brauchst du den Eignungstest der  ICT Berufsbildung Bern Mediamatik. Mehr Infos findest du <a class="darklink" href="http://ict-bbb-mediamatik.ch/index.php/eignungstest.html" alt="Sigmedia Eignungstest">hier</a>.
                     </p>
                 </div>
                 
@@ -464,7 +444,6 @@
                 <label class="box-label" for="openIAM">
                 <div class="inline-box border col-4">
                     <img height="70" src="img/content/icons/icon-iam.svg">
-                    <!--<h2 class="centered light-blue-grey uppercase">Interaktive Medien</h2>-->
                         <p lang="de" class="text16 centered light light-blue-grey">
                             In der IAM werden Lernmedien wie Apps für die Ausbildung in der Armee erstellt und für verschiedene Endgeräte optimiert.
                         </p>
@@ -476,7 +455,6 @@
                 --><label class="box-label" for="openMT">
                 <div class="inline-box border col-4" style="margin: 0px 8px 0px 8px;">
                     <img height="70" src="img/content/icons/icon-mt.svg">
-                    <!--<h2 class="centered light-blue-grey uppercase">Mediathek</h2>-->
                         <p lang="de" class="text16 centered light light-blue-grey">
                             Die Mediathek beschäftigt sich mit der Archivierung dem Vertrieb sowie der Aufbereitung von Bild- und Videomaterial analog und im Web.
                         </p>
@@ -488,7 +466,6 @@
                 --><label class="box-label" for="openPM">
                 <div class="inline-box border col-4" style="margin: 0px 0px 0px 8px;">
                     <img height="70" src="img/content/icons/icon-pm.svg">
-                    <!--<h2 class="centered light-blue-grey uppercase">Printmedien</h2>-->
                         <p lang="de" class="text16 centered light light-blue-grey">
                             Die Printmedien sind die Anlaufstelle für alles was mit Produkten für den Druck zu tun hat. Es entstehen Broschüren, Flyer und vieles mehr.
                         </p>
@@ -752,20 +729,22 @@
             
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
             <script type="text/javascript">
-                // When the window has finished loading create our google map below
+                // Die Karte wird eingefügt, wenn das Fenster geladen hat. 
                 google.maps.event.addDomListener(window, 'load', init);
 
                 function init() {
-                    // Basic options for a simple Google Map
-                    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                    // Grundlegende Optionen zur Einbettung von Google Maps.
+                    // Weitere Einstellungsmöglichkeiten können unter folgendem Link eingesehen werden: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                     var mapOptions = {
-                        // How zoomed in you want the map to start at (always required)
+                        // Die Zoomstufe, auf der sich die Karte befinden soll. Dieser Wert ist immer notwendig und muss definiert werden.
                         zoom: 16,
+                        // Mit der folgenden Einstellung kann festgelegt werden, ob die Standardbenutzeroberfläche mit Zoomregler usw. angezeigt werden soll oder nicht.
                         disableDefaultUI: true,
+                        // Hiermit habe ich das Scrollen mit dem Mausrad deaktiviert. Das ist besonders für Notebooknutzer hilfreich, da sie sonst vom Scrollen der Webseite abgehalten werden können.
                         scrollwheel: false,   
 
 
-                        // The latitude and longitude to center the map (always required)
+                        // Hier werden Latitude und Langitude des geünschten Kartenausschnitts festgelegt. Diese Einstellung ist immer notwendig.
                         center: new google.maps.LatLng(46.966881, 7.454935),
 
                         // How you would like to style the map. 
@@ -857,7 +836,28 @@
                 <noscript><p><img src="//stats.zem.ch/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
             <!-- Ende Piwik Code -->
         
+        <script src="js/jquery1.12.0.min.js"></script>       
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/counterup.min.js"></script>    
+        <script src="js/wow.min.js"></script>
+        
+        <script>           
+            //Initialisieren des jQuery CountUp-Plugins
+            jQuery(document).ready(function() {
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 2000
+                });
+            });            
+        </script>
+        
+        <script>    
+            // Initialisierung des wow.js-Plugins.
+            new WOW().init();
+        </script>
+        
         <script src="js/jquery.inview.js"></script>
         <script src="js/video-js/video.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
