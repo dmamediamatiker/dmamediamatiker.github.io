@@ -3,18 +3,32 @@
     <head>
         
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Metatags für die Beschreibung, Suchworte und Autor -->
+        <meta name="description" content="Wie werde ich Mediamatiker im Zentrum elektronische Medien? Was sind meine Tätigkeiten? Das alles wird auf dieser Seite erläutert." />
+		<meta name="keywords" content="Mediamatiker, Mediamatikerin, Mediamatiker EFZ, ZEM, zem, Zentrum elektronische Medien, LBA, VBS, Lehre admin, Lehre Mediamatiker, Mediamatikerlehre, Mediamatiker Bern, Lehre, Berufsbildung, Kreativität, Design, Webdesign, Berufsportrait, Berufsbild, Berufsbild Mediamatiker, ZEM Mediamatiker">
+		<meta name="author" content="Zentrum elektronische Medien | Stefan Eckstein" />
+        
+        <!-- Mit der Folgenden Einstellung wird die Farbe des Browsertabs unter Android 5.1+ geändert -->
+        <meta name="theme-color" content="#54a8b6">
+        
+        <!-- Den Suchmaschinen erlauben, die Seite zu indexieren -->
+        <meta name="robots" content="index, follow" />
+        
         <title>Interaktives Berufsportrait eines Mediamatikers</title>
         <link rel="stylesheet" href="css/video-js.css">
+        <link rel="stylesheet" href="css/lightbox.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/svganimate.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"> 
         
+        <!-- Einbinden des Favicon -->
+        <link rel="shortcut icon" href="img/layout/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="img/layout/favicon.ico" type="image/x-icon" />
         
         <!-- read the licenses of the used plugins here: -->
         <script src="plugin-licenses.txt"></script>
-        
-        
-        
         
     </head>
     <body class="noscroll">
@@ -57,9 +71,6 @@
             
             <div id="mdhome-content" class="col-8 div-center">
                 <div id="mdhome-skyline" class="col-4 div-center animated vhidden">
-                    <!--<img src="img/layout/md-home-skyline.svg" alt="Mediamatiker">-->
-                    
-                    <!-- Mediamatiker-Skyline-SVG, welches animiert wird, wenn die Seite geladen und der Loadingscreen ausgeblendet ist. --> 
                     
                     <svg version="1.1" id="skyline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100" height="100" viewBox="0 0 234.5 60" style="enable-background:new 0 0 234.5 60;" xml:space="preserve">
                         <style type="text/css">   
@@ -382,7 +393,6 @@
                     </g>
                     </svg>
                     
-                    <!--<img height="150" src="img/content/icons/icon-willkommen.svg">-->
                     <h1 class="dark-aqua centered wow fadeInUp">Willkommen im ZEM!</h1> 
                     <p class="subtitle light-blue-grey centered col-8 div-center wow fadeInUp">
                         Hast du dich beim ZEM beworben und die Lehrstelle für die weiteren zwei Lehrjahre erhalten, bist du ab Sommer ein Teil unseres Teams. Herzlich Willkommen! 
@@ -423,11 +433,8 @@
                 
                 </div>
                 
-            </section>        
-        
-        
-        
-        
+            </section>    
+
         </section>
         
         <section id="mdbereiche">
@@ -571,7 +578,11 @@
                     <div class="overlay-text col-7">
                         <p lang="de" class="text16 light light-blue-grey">
                             In der Mediathek arbeitest du viel mit dem Internet und entwickelst auch dafür. Du erstellst kleine Webseiten von Grund auf und pflegst sowie aktualisierst diese und bereits vorhandene. Zudem hast du die Möglichkeit, neue Techniken zu lernen und anzuwenden. Beispiele hierfür sind GitHub, das Grav CMS, der Sass-Compiler und vieles mehr. Du bist immer auf dem aktuellsten Stand, was im Internet gerade angesagt ist. Folgende Projekte konnte ich umsetzen:
-                        </p>                    
+                        </p>
+                        <div class="lb-wrapper">
+                            <a href="img/content/lightbox/mediathek-web/mediathek-digame.png" data-lightbox="mediathek-web"><img src="img/content/lightbox/mediathek-web/mediathek-digame.png" width="180"></a>
+                            <a href="img/content/lightbox/mediathek-web/mediathek-landing.png" data-lightbox="mediathek-web"><img src="img/content/lightbox/mediathek-web/mediathek-landing.png" width="180"></a>
+                        </div>
                     </div>                
                 </div>
                 
@@ -637,7 +648,12 @@
                     <div class="overlay-text col-7">
                         <p lang="de" class="text16 light light-blue-grey">
                             Du hast anhand einer fiktiven Firma die Möglichkeit, dein Erlerntes anzuwenden und einen kompletten Auftritt vom Logo über Flyer bis hin zur Visitenkarte zu erstellen. Hierbei kannst du deiner Kreativität freien Lauf lassen und kriegst laufend Feedback von den MitarbeiterInnen der Printmedien. Nach Gelegenheit hast du auch die Möglichkeit ein Printprodukt zu erstellen, welches dann wirklich zum Einsatz kommt. Das ist eine tolle Gelegenheit!
-                        </p>                    
+                        </p>
+                        <div class="lb-wrapper">
+                            <a href="img/content/lightbox/print-produkte/print-blaubuch.png" data-lightbox="print-produkte"><img src="img/content/lightbox/print-produkte/print-blaubuch.png" width="180"></a>
+                            <a href="img/content/lightbox/print-produkte/print-karte.png" data-lightbox="print-produkte"><img src="img/content/lightbox/print-produkte/print-karte.png" width="180"></a>
+                            <a href="img/content/lightbox/print-produkte/print-flyer.png" data-lightbox="print-produkte"><img src="img/content/lightbox/print-produkte/print-flyer.png" width="180"></a>
+                        </div>
                     </div>                
                 </div>
 
@@ -741,25 +757,16 @@
                         // Mit der folgenden Einstellung kann festgelegt werden, ob die Standardbenutzeroberfläche mit Zoomregler usw. angezeigt werden soll oder nicht.
                         disableDefaultUI: true,
                         // Hiermit habe ich das Scrollen mit dem Mausrad deaktiviert. Das ist besonders für Notebooknutzer hilfreich, da sie sonst vom Scrollen der Webseite abgehalten werden können.
-                        scrollwheel: false,   
-
-
+                        scrollwheel: false,  
                         // Hier werden Latitude und Langitude des geünschten Kartenausschnitts festgelegt. Diese Einstellung ist immer notwendig.
                         center: new google.maps.LatLng(46.966881, 7.454935),
-
-                        // How you would like to style the map. 
-                        // This is where you would paste any style found on Snazzy Maps.
+                        // Hier wird der Style der Map definiert. Hier kann der bei Snazzymaps generierte Code eingefügt werden.
                         styles: [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"landscape.natural.terrain","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#53a8b6"},{"visibility":"on"}]}]
                     };
-
-                    // Get the HTML DOM element that will contain your map 
-                    // We are using a div with id="map" seen below in the <body>
+                    // Definieren, in welchem Element die Karte angezeigt werden soll.
                     var mapElement = document.getElementById('map');
-
-                    // Create the Google Map using our element and options defined above
                     var map = new google.maps.Map(mapElement, mapOptions);
-
-                    // Let's also add a marker while we're at it
+                    // Erstellen einer Markierung auf der Karte.
                     var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(46.966881, 7.454935),
                         map: map,
@@ -836,7 +843,8 @@
                 <noscript><p><img src="//stats.zem.ch/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
             <!-- Ende Piwik Code -->
         
-        <script src="js/jquery1.12.0.min.js"></script>       
+        <script src="js/jquery1.12.0.min.js"></script>
+        <script src="js/lightbox.js"></script>
         <script src="js/waypoints.min.js"></script>
         <script src="js/counterup.min.js"></script>    
         <script src="js/wow.min.js"></script>
@@ -849,6 +857,12 @@
                     time: 2000
                 });
             });            
+        </script>
+        
+        <script>
+            lightbox.option({
+                'albumLabel': "Bild %1 von %2"
+            })
         </script>
         
         <script>    
