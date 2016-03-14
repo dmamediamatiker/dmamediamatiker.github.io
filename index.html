@@ -1,47 +1,877 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
     <head>
+        
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Metatags für die Beschreibung, Suchworte und Autor -->
+        <meta name="description" content="Wie werde ich Mediamatiker im Zentrum elektronische Medien? Was sind meine Tätigkeiten? Das alles wird auf dieser Seite erläutert." />
+		<meta name="keywords" content="Mediamatiker, Mediamatikerin, Mediamatiker EFZ, ZEM, zem, Zentrum elektronische Medien, LBA, VBS, Lehre admin, Lehre Mediamatiker, Mediamatikerlehre, Mediamatiker Bern, Lehre, Berufsbildung, Kreativität, Design, Webdesign, Berufsportrait, Berufsbild, Berufsbild Mediamatiker, ZEM Mediamatiker">
+		<meta name="author" content="Zentrum elektronische Medien | Stefan Eckstein" />
+        
+        <!-- Mit der Folgenden Einstellung wird die Farbe des Browsertabs unter Android 5.1+ geändert -->
+        <meta name="theme-color" content="#54a8b6">
+        
+        <!-- Den Suchmaschinen erlauben, die Seite zu indexieren -->
+        <meta name="robots" content="index, follow" />
+        
         <title>Interaktives Berufsportrait eines Mediamatikers</title>
+        <link rel="stylesheet" href="css/video-js.css">
+        <link rel="stylesheet" href="css/lightbox.css">
         <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/svganimate.css">
+        <link rel="stylesheet" href="css/style.css"> 
         
-        <script src="js/jquery.min.js"></script>
+        <!-- Einbinden des Favicon -->
+        <link rel="shortcut icon" href="img/layout/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="img/layout/favicon.ico" type="image/x-icon" />
         
-        <script src="js/wow.min.js"></script>
-        <script>
-            // Initialisierung der wow.js-Plugins.
-              new WOW().init();
-        </script>
-        
-        <script src="js/script.js"></script>
+        <!-- read the licenses of the used plugins here: -->
+        <script src="plugin-licenses.txt"></script>
         
     </head>
-    <body>
-        <header>
+    <body class="noscroll">
+        
+        <input type="checkbox" id="openIAM" class="hidden">
+        <input type="checkbox" id="openMT" class="hidden">
+        <input type="checkbox" id="openPM" class="hidden">
+        
+        <section id="mdloader">
+            <div class="fullwidth div-center">
+                <div id="header-logo" class="col-4">
+                     <img src="img/layout/md-logo-admin-vbs-inv.svg" alt="Logo VBS"> 
+                </div>
+            </div>
+            <div id="mdloader-content" class="col-8 div-center">                
+                <h1 class="dark-aqua centered">Berufsbild Mediamatiker</h1>
+                <p class="subtitle light-grey centered">
+                    Bitte habe einen kurzen Moment Geduld. <br>
+                    Die Inhalte werden geladen.
+                </p>
+            </div>
+            <div class="loaderbar-wrapper col-2 div-center">
+                <div class="loaderbar">
+                </div>
+            </div>
+        
+        
+        </section>
+        
+        
+        <header id="mdheader">
             <div class="fullwidth div-center">
                 <div id="header-logo" class="col-4">
                      <img src="img/layout/md-logo-admin-vbs.svg" alt="Logo VBS"> 
                 </div>
             </div>
-        </header>
+        </header>        
         
         <section id="mdhome">
             
             <div id="mdhome-content" class="col-8 div-center">
-                <div id="mdhome-skyline" class="col-4 div-center">
-                    <img src="img/layout/md-home-skyline.svg" alt="Mediamatiker">
+                <div id="mdhome-skyline" class="col-4 div-center animated vhidden">
+                    
+                    <svg version="1.1" id="skyline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100" height="100" viewBox="0 0 234.5 60" style="enable-background:new 0 0 234.5 60;" xml:space="preserve">
+                        <style type="text/css">   
+                            svg{width:380px}.st0{fill:none;stroke:#53A8B6;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10}.st1,.st2{stroke:#53A8B6;fill:none}.st1{stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10}.st2{stroke-width:2;stroke-miterlimit:10}.st3{fill:none;stroke:#53A8B6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+                        </style>
+                        <g id="sky" height="100">
+                            <g id="sky-mac">
+                                <path id="sky-mac-body" class="st0" d="M137.1,1H92.2c-2.8,0-5,2.2-5,5v29.9c0,2.8,2.2,5,5,5h17.4l-5,7.5v2.5h19.9v-2.5l-5-7.5h17.4c2.8,0,5-2.2,5-5V6C142.1,3.2,139.8,1,137.1,1z"/>
+                                <path id="sky-mac-monitor" class="st1" d="M137.1,30.9H92.2V6h44.9V30.9z"/>
+                                <path id="sky-mac-mtn" class="st3" d="M107.5,17.3l5.1,6.1l7.1-9.1l9.1,12.2h-28.4L107.5,17.3z"/>
+                            </g>
+                            <g id="sky-printer">
+                                <path id="sky-printer-paper" class="st3" d="M160.3,49.9v-5.2h24.4v5.2v1V59h-24.4v-8.1V49.9z"/>
+                                <path id="sky-printer-body" class="st3" d="M184.7,50.9h8.1V38.7c0-3.4-2.7-6.1-6.1-6.1h-28.4c-3.4,0-6.1,2.7-6.1,6.1v12.2h8.1"/>
+                                <path id="sky-printer-button" class="st3" d="M186.7,40.7c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2c1.1,0,2,0.9,2,2C188.8,39.8,187.9,40.7,186.7,40.7z"/>
+                                <path id="sky-printer-back" class="st3" d="M184.7,32.6h-24.4V22.4h24.4V32.6z"/>
+                            </g>
+                            <g id="sky-cam">
+                                <path id="sky-cam-body" class="st2" d="M33.4,21.4l3.1,3.3h5.3c1.9,0,3.3,1.5,3.3,3.3v19.6c0,1.8-1.5,3.3-3.3,3.3H15c-1.9,0-3.4-1.5-3.4-3.3V28c0-1.8,1.5-3.3,3.4-3.3h5.3l3.1-3.3H33.4z"/>
+                                <path id="sky-cam-inner" class="st2" d="M28.4,44.5c-3.8,0-6.9-3-6.9-6.8s3.1-6.8,6.9-6.8c3.8,0,6.9,3,6.9,6.8S32.2,44.5,28.4,44.5z"/>
+                            </g>
+                            <g id="sky-cd">
+                                <path id="sky-cd-outer" class="st2" d="M213.1,29.8c-5.8,0-10.5,4.7-10.5,10.5c0,5.8,4.7,10.5,10.5,10.5c5.8,0,10.5-4.7,10.5-10.5C223.6,34.5,218.9,29.8,213.1,29.8z"/>
+                                <path id="sky-cd-inner" class="st2" d="M213.1,43c-1.5,0-2.6-1.2-2.6-2.6c0-1.5,1.2-2.6,2.6-2.6c1.5,0,2.6,1.2,2.6,2.6C215.7,41.8,214.5,43,213.1,43z"/>
+                            </g>
+                            <path id="sky-linie-left" class="st3" d="M159.4,50.9H1"/>
+                            <path id="sky-linie-right" class="st3" d="M233.5,50.9h-48.7"/>
+                            <g id="sky-plant">
+                                <path id="sky-plant-pot" class="st3" d="M71.1,50.9H57.7l-1.5-11.2h16.4L71.1,50.9z"/>
+                                <path id="sky-plant-pot-top" class="st3" d="M73.6,39.7H54.3v-5.1h19.3V39.7z"/>
+                                <path id="sky-plant-leaf1" class="st0" d="M59.4,31.2c-1.1-0.8-1.9-1.5-3-2.8c-2.9-3.2-4.5-6.5-3.6-7.3c0.9-0.9,4.1,1,7,4.2c0.1,0.1,0.1,0.2,0.2,0.2"/>
+                                <path id="sky-plant-leaf2" class="st0" d="M67.1,32.3c1.4-0.7,3.1-2.1,4.8-3.9c2.9-3.2,4.5-6.5,3.6-7.3c-0.9-0.9-4.1,1-7,4.2c-0.1,0.2-0.3,0.3-0.4,0.5"/>
+                                <path id="sky-plant-leaf3" class="st0" d="M57.4,19.3c-0.2-1.1-0.1-1.9,0.4-2.2c1-0.6,3.1,1.1,5.1,3.9"/>
+                                <path id="sky-plant-leaf4" class="st0" d="M65.3,20.8c0.9-3.3,2.4-5.7,3.5-5.4c1,0.2,1.4,2.5,1.2,5.5"/>
+                                <path id="sky-plant-leaf5" class="st0" d="M61.6,32.3c-0.1-0.7,0-0.7,0-1.5c0-4.4,1.1-7.9,2.4-7.9c1,0,1.9,2.1,2.3,5.1"/>
+                            </g>
+                        </g>   
+                    </svg>
+                    
                 </div>
+                <div id="mdhometext" class="animated vhidden">
                 <h1 class="dark-aqua centered">Berufsbild Mediamatiker</h1>
                 <p class="subtitle light-blue-grey centered">
                     Hallo und willkommen. Auf dieser Seite möchte ich dir den Beruf MediamatikerIn mit dem Hauptaugenmerk auf das Zentrum elektronische Medien (ZEM) näherbringen und dir einen Einblick in den Arbeitsalltag gewähren.
                 </p>
+                </div>
             </div>
-            
-            <div class="animated infinite bounce">
-                <span class="icon-icon-arrow-down"></span>
+            <div id="scrolldown" class="col-4">
+                <p class="text16 light centered">
+                    Scrolle weiter oder klicke auf das Icon um mehr zu erfahren.
+                </p>
+                <div class="scrollhint animated centered" style="">
+                    <span class="scrolldown-arrow icon icon-icon-arrow-down"></span>
+                </div>
             </div>
         
         </section>
+        
+        <section id="mdwie">
+            <div class="sectionhead col-8 div-center">
+                <h1 class="dark-aqua centered">Wie wirst du MediamatikerIn?</h1> 
+                <p class="subtitle light-blue-grey centered">                    
+                    Du interessierst dich für eine Lehre als MediamatikerIn? Eine gute Wahl! MediamatikerIn ist ein Beruf mit Zukunft. Dank dem breiten Fachwissen, welches du dir über die vier Lehrjahre aneignest, stehen dir für deine Zukunft viele unterschiedliche Wege offen. Als kleiner Einblick vorneweg findest du hier ein Video, das die Arbeiten als MediamatikerIn beim Bund im Allgemeinen aufzeigt. 
+                </p>
+            </div>
+            
+            <div id="videosection">
+                <div class="col-8 div-center">
+                    <div id="video">
+                        <div id="playerwrapper" class="col-8 div-center">
+                            
+                            <div id="videoplayer">
+                            
+                                <video id="video-mediamatiker" class="video-js vjs-default-skin"
+                                  controls preload="auto" width="780" height="439"
+                                  poster="img/screenshot-video.png"
+                                  data-setup='{"example_option":true}'>
+                                    <source src="media/mediamatiker.mp4" type='video/mp4' />
+                                    <source src="media/mediamatiker.webm" type='video/webm' />
+                                    <source src="media/mediamatiker.ogv" type='video/ogg' />
+                                    <p class="vjs-no-js">Um dieses Video anzuschauen, wird ein Webbrowser vorausgesetzt, der <a href="http://videojs.com/html5-video-support/" target="_blank">HTML5-Videos unterstützt.</a></p>
+                                </video>
+                                
+                            </div>
+                            <p class="text16 light centered light-grey">
+                                Dieses Video wurde von Mediamatik-Lernenden erstellt. Weitere Infos dazu findest du <a class="lightlink"  href="http://www.stelle.admin.ch/berufseinstieg/00755/01139/index.html?lang=de" alt="Lernendenvideos Bund" target="_blank">hier</a>.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="clearfix"></div>
+                </div>            
+            </div>
+            
+            <div class="quote col-8 div-center">
+                <p class="subtitle light-blue-grey centered">
+                    Wie du siehst ist eine Lehre als MediamatikerIn ganz schön vielseitig und abwechslungsreich. Doch welche Anforderungen musst du erfüllen, um diesen Beruf zu lernen?
+                </p>
+            </div>
+            
+            <section id="requirement-grid" class="col-12 div-center">
+            
+                <div id="schulabschluss" class="grid-item col-4 centered">
+                    <img height="70" src="img/content/icons/icon-schulabschluss.svg">
+                    <h2 class="centered light-blue-grey uppercase">Schulabschluss</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Um eine Lehre als MediamatikerIn zu machen, musst du deine obligatorische Schulzeit abgeschlossen haben. Gute Noten auf dem Niveau Sekundarstufe sind von zudem von Vorteil.
+                    </p>
+                    
+                </div>
+                
+                <div id="kreativitaet" class="grid-item col-4 centered">
+                    <img height="70" src="img/content/icons/icon-kreativitaet.svg">
+                    <h2 class="centered light-blue-grey uppercase">Kreativität</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Du entwickelst Konzepte für Printprodukte, fürs Web und weitere neue Medien und setzt diese dann auch um. Hierbei ist jederzeit deine volle Kreativität gefragt.
+                    </p>
+                    
+                </div>
+                
+                
+                <div id="denkvermoegen" class="grid-item col-4 centered">
+                    <img height="70" src="img/content/icons/icon-logisch-denken.svg">
+                    <h2 class="centered light-blue-grey uppercase">Denkvermögen</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Die Lehre als MediamatikerIn fordert von dir, dass du logisch und abstrakt denken kannst. Dies ist in der sich immer weiterentwicklenden Welt der neuen Medien äusserst wichtig.
+                    </p>
+                    
+                </div>
+                
+                <div id="kommunikation" class="grid-item col-4 centered">
+                    <img height="70" src="img/content/icons/icon-kommunikation.svg">
+                    <h2 class="centered light-blue-grey uppercase">Kommunikation</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Du stehst mit internen und externen Personen in direktem Kontakt. Der Umgang mit Menschen ist daher sehr wichtig. Englisch und eine zweite Landessprache sollten für dich kein Problem darstellen.
+                    </p>
+                    
+                </div>
+                
+                <div id="selbststaendigkeit" class="grid-item col-4 centered">
+                    <img height="70" src="img/content/icons/icon-selbststaendig.svg">
+                    <h2 class="centered light-blue-grey uppercase">Selbstständigkeit</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Arbeiten kannst du selbstständig planen, durchführen und dokumentieren. Dein Betrieb kann sich auf dich verlassen. Du kannst dich auch über längere Zeit auf eine Aufgabe konzentrieren.
+                    </p>
+                    
+                </div>
+                
+                <div id="teamfaehigkeit" class="grid-item col-4 centered">
+                    <img height="70" src="img/content/icons/icon-teamarbeit.svg">
+                    <h2 class="centered light-blue-grey uppercase">Teamfähigkeit</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        MediamatikerInnen sind keine reinen Einzelkämpfer. Du arbeitest in deinem Betrieb an Projekten mit, bei denen gute Teamfähigkeit vorausgesetzt ist. 
+                    </p>
+                    
+                </div>
+                
+                <div class="clearfix"></div>
+                
+            </section>
+            
+            
+            <div class="more-info col-8 div-center">
+                <p class="subtitle light-blue-grey centered">
+                    Weitere Informationen hierzu findest du auf den folgenden Webseiten:
+                </p>
+            </div>
+            
+            
+            <section class="link-buttons col-12 div-center">
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="http://www.stelle.admin.ch/berufseinstieg/00755/00848/00850/00867/?lang=de" alt="Stellenportal Bund MediamatikerIn" target="_blank">Stellenportal Bund</a></h2>             
+                </div>
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="http://www.ict-berufsbildung.ch/berufsbildung/mediamatikerin-efz/" alt="ICT-Berufsbildung MediamatikerIn" target="_blank">ICT-Berufsbildung</a></h2>             
+                </div>
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="http://www.berufsberatung.ch/dyn/1199.aspx?id=4034" target="_blank">Berufsberatung.ch</a></h2>             
+                </div>
+            
+                <div class="clearfix"></div>
+            
+            
+            
+            </section>
+        </section>
+        
+        
+        <section id="mdschule">
+            <div class="pagewidth bg-light-blue-grey">
+                
+                <div class="sectionhead col-8 div-center">
+                    <h1 class="dark-aqua centered">Berufsfachschule</h1> 
+                    <p class="subtitle light-grey centered">
+                        Während deiner Lehrzeit besuchst du zwei Mal in der Woche die Berufsfachschule BBZ Biel. Nebst den allgemeinbildenden Fächern lernst du viele wichtige Dinge in berufsbezogenen Fächern wie beispielsweise Marketing, Wirtschaft und Recht sowie Bürokommunikation lernst. Optional hast du die Möglichkeit die Berufsmaturität begleitend zu absolvieren um später prüfungsfrei eine Fachhochschule besuchen zu können. 
+                    </p>
+                </div>
+            </div>
+                
+            <div class="quote col-8 div-center"> 
+                <p class="subtitle light-blue-grey centered">
+                    Während des dritten Lehrjahres erarbeitest du im Multimediaunterricht einen Styleguide für eine (fiktive) Firma bei dem du alle wichtigen Dinge beachtest und umsetzt. Hierbei ist deine ganze Kreativität und Ideenfreudigkeit gefragt. Als Abschluss dieses Projekts setzt du in einer Projektwoche diverse Produkte anhand deines Styleguides um.
+                </p>
+            </div>
+            
+            <div class="more-info col-8 div-center">
+                <p class="subtitle light-blue-grey centered">
+                    Weitere Informationen hierzu findest du auf der folgenden Webseite:
+                </p>
+            </div>
+            
+            <section class="link-buttons col-12 div-center">
+                
+                <div class="external-button col-4 div-center">
+                    <h2 class="light-blue-grey"><a href="http://www.bbz-biel.ch/ausbildung/bm-mediamatiker" alt="BBZ-Biel MediamatikerIn" target="_blank">BBZ-Biel</a></h2>             
+                </div>
+                
+                <div class="clearfix"></div>
+                
+            </section>
+        
+        
+        
+        </section>
+        
+        
+        <section id="mdweg">
+            
+            <div class="sectionhead col-10 div-center">
+                <h1 class="dark-aqua centered">Wie werde ich MediamatikerIn im ZEM?</h1> 
+                <p class="subtitle light-blue-grey centered col-8 div-center">
+                    Schön zu hören, dass du dich für die Lehrstelle als MediamatikerIn im Zentrum elektronische Medien interessierst. Doch wie kommst du nun zu uns? Folgend zeige ich dir, den Ablauf mit allen wichtigen Zwischenschritten. 
+                </p>
+            </div>
+            
+            <section id="timeline">
+                
+                <div class="timeline-circle div-center wow fadeInUp"></div>
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-eignungstest.svg">
+                    <h2 class="centered light-blue-grey uppercase">Eingnungstest</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Bevor du dich für eine Lehre als MediamatikerIn bewirbst, machst du einen Eignungstest. Hierbei gibt es verschiedene. Für die Lehre in der BiCT AG brauchst du den Eignungstest der  ICT Berufsbildung Bern Mediamatik. Mehr Infos findest du <a class="darklink" href="http://ict-bbb-mediamatik.ch/index.php/eignungstest.html" alt="Sigmedia Eignungstest" target="_blank">hier</a>.
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-bewerbung.svg">
+                    <h2 class="centered light-blue-grey uppercase">Bewerbung</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Hast du den Eignungstest bestanden, so kannst du dich nun bewerben. Sende deine Unterlagen (Personalien, Lebenslauf, Testergebnisse, Zeugnisse, ...) an die BiCT AG und warte auf eine Rückmeldung. 
+                        Viel Glück!
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-lehstelle.svg">
+                    <h2 class="centered light-blue-grey uppercase">Lehrstelle BiCT</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Wurdest du zu einem Bewerbungsgespräch eingeladen und hast die Lehrstelle erhalten? 
+                        Herzlichen Glückwunsch!
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
+                    Lehrbeginn
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-grundbildung.svg">
+                    <h2 class="centered light-blue-grey uppercase">Zweijährige Grundbildung</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        In den ersten zwei Lehrjahren lernst du jede Menge an neuen Programmen und eignest dir ein breites Wissen in verschiedenen Multimediabereichen an.
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-box border col-6 div-center wow fadeInUp">
+                    <img height="70" src="img/content/icons/icon-selbststaendig.svg">
+                    <h2 class="centered light-blue-grey uppercase">Bewerbung / Workbook</h2>
+                    <p lang="de" class="text16 centered light light-blue-grey">
+                        Mitte des zweiten Lehrjahres fängt die Bewerbungsphase für die weiteren zwei Lehrjahre. Dabei stellen sich verschiedene Betriebe vor, bei denen du dich bewerben kannst. Darunter ist auch das Zentrum elektronische Medien ZEM. In deinem Workbook dokumentierst du alle gelernten Dinge aus der bisherigen Lehrzeit.
+                    </p>
+                </div>
+                
+                <div class="timeline-line div-center wow fadeInUp"></div>
+                
+                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
+                    Lehrstelle
+                </div>
+                
+                <div class="timeline-end col-8 div-center">
+
+                    <svg version="1.1" id="Luftballon" class="notanimated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="200px" viewBox="0 0 100 200" style="enable-background:new 0 0 100 200;" xml:space="preserve">
+                    <style type="text/css">                        
+                        .icon-ballon-path-outline{fill:none;stroke:#54a8b6;stroke-width:4;stroke-miterlimit:10}
+                        .icon-ballon-path-reflection{fill:none;stroke:#54a8b6;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10}
+                        .icon-ballon-path-ventil{fill:none;stroke:#54a8b6;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+                        .icon-ballon-path-schnur{fill:none;stroke:#54a8b6;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10}
+                    </style>
+                    <g id="lb-group">
+                        <path id="lb-ballon" class="icon-ballon-path-outline" d="M50.2,28.5c17.3,0,31.4,14,31.4,31.4c0,11.6-4.7,25.4-19.6,38.9c-2.9,2.4-5.7,3.9-11.7,4.2   c-6.1-0.3-8.9-1.8-11.8-4.2C23.5,85.2,18.9,71.5,18.9,59.9C18.9,42.6,32.9,28.5,50.2,28.5z"/>
+                        <path id="lb-reflektion" class="icon-ballon-path-reflection" d="M30.4,53.8c2.9-8,10-13.9,18.7-15"/>
+                        <path id="lb-ende" class="icon-ballon-path-ventil" d="M53.4,104 60.7,117.4 39.8,117.4 47,104.4  "/>
+                        <path id="lb-schnur" class="icon-ballon-path-schnur" d="M47.2,123.5c0,0-10.1,9.6,4.1,23.8c14.4,14.4-4.1,25-4.1,25"/>
+                    </g>
+                    </svg>
+                    
+                    <h1 class="dark-aqua centered wow fadeInUp">Willkommen im ZEM!</h1> 
+                    <p class="subtitle light-blue-grey centered col-8 div-center wow fadeInUp">
+                        Hast du dich beim ZEM beworben und die Lehrstelle für die weiteren zwei Lehrjahre erhalten, bist du ab Sommer ein Teil unseres Teams. Herzlich Willkommen! 
+                    </p>
+                
+                </div>
+                
+                
+            
+            </section>
+            
+            <section id="timeline-facts">
+                <div class="quote col-8 div-center">
+                    <p class="subtitle light-blue-grey centered">
+                        Der Weg geht auch noch weiter wenn du die Lehre im ZEM weiterführst – <br> und dies an jedem Arbeitstag. 
+                    </p>
+                </div>
+                
+                <div class="numbers-wrapper col-10 div-center">
+                    
+                    <div class="inline-box col-4">
+                        <h2 class="countup-number-big centered counter">7208</h2>
+                        <h2 class="centered light-blue-grey uppercase">Kilometer</h2>
+                            <p lang="de" class="text16 centered light light-blue-grey">
+                                Das ist die Strecke, die ich über zwei Lehrjahre mit dem ÖV von mir Zuhause ins ZEM und zurück gefahren bin. Die Strecke entspricht der Entfernung vom Bahnhof Bern <a class="darklink" href="https://goo.gl/cjEc7z" alt="Link zu besagter Stelle auf Google Maps." target="_blank">auf einen Highway</a> nordöstlich von Charlestown, South Carolina USA.
+                            </p>                    
+                    </div>
+                    
+                    <div class="inline-spacer col-2"></div>
+                    
+                    <div class="inline-box col-4">
+                        <h2 class="countup-number-big centered counter">334</h2>
+                        <h2 class="centered light-blue-grey uppercase">Stunden</h2>
+                            <p lang="de" class="text16 centered light light-blue-grey">
+                                Das ist die Zeit, die alle Fahrten zusammen dauerten. In dieser Zeit könnte man alle Harry Potter Filme 17 Mal komplett anschauen oder den Song „We are the World“ von USA for Africa 2834 Mal hören. 
+                            </p>                    
+                    </div>
+                
+                </div>
+                
+            </section>    
+
+        </section>
+        
+        <section id="mdbereiche">
+            <div class="sectionhead col-8 div-center">
+                <h1 class="dark-aqua centered">Das ZEM und seine Bereiche</h1> 
+                <p class="subtitle light-blue-grey centered">            
+                    Das Zentrum elektronische Medien ist in sechs verschiedene Bereiche aufgeteilt. In drei davon kannst du während deiner Lehrzeit in Form von einer mehrmonatigen Stage einen Einblick erhalten. Wähle einfach den Bereich aus, über den du mehr wissen möchtest und du erfährst die wichtigsten Informationen zu dem jeweiligen Bereich.
+                </p>
+            </div>
+            
+            <div class="bereiche-wrapper col-12 div-center">
+                
+                
+                <label class="box-label" for="openIAM">
+                <div class="inline-box border col-4">
+                    <img height="70" src="img/content/icons/icon-iam.svg">
+                        <p lang="de" class="text16 centered light light-blue-grey">
+                            In der IAM werden Lernmedien wie Apps für die Ausbildung in der Armee erstellt und für verschiedene Endgeräte optimiert.
+                        </p>
+                        <div class="overlay-button col-3 div-center">
+                            <h2 class="light-blue-grey">Interaktive Medien</h2>    
+                        </div>
+                </div></label><!--
+
+                --><label class="box-label" for="openMT">
+                <div class="inline-box border col-4" style="margin: 0px 8px 0px 8px;">
+                    <img height="70" src="img/content/icons/icon-mt.svg">
+                        <p lang="de" class="text16 centered light light-blue-grey">
+                            Die Mediathek beschäftigt sich mit der Archivierung dem Vertrieb sowie der Aufbereitung von Bild- und Videomaterial analog und im Web.
+                        </p>
+                        <div class="overlay-button col-3 div-center">
+                            <h2 class="light-blue-grey">Mediathek</h2>    
+                        </div>
+                </div></label><!--
+
+                --><label class="box-label" for="openPM">
+                <div class="inline-box border col-4" style="margin: 0px 0px 0px 8px;">
+                    <img height="70" src="img/content/icons/icon-pm.svg">
+                        <p lang="de" class="text16 centered light light-blue-grey">
+                            Die Printmedien sind die Anlaufstelle für alles was mit Produkten für den Druck zu tun hat. Es entstehen Broschüren, Flyer und vieles mehr.
+                        </p>
+                        <div class="overlay-button col-3 div-center">
+                            <h2 class="light-blue-grey">Printmedien</h2>    
+                        </div>
+                </div></label>
+                
+            </div>
+            
+        </section>
+        
+        
+        
+        <section id="overlayIAM" class="overlay">
+            <div class="overlaywrapper col-12 div-center animated fadeInUp">
+                <div class="sectionhead col-8 div-center">
+                    <h1 class="dark-aqua centered">Interaktive Medien</h1> 
+                    <p class="subtitle light-blue-grey centered">            
+                        Bei den Interaktiven Medien werden Lernprogramme und Apps für den Bereich Verteidigung und Ausbildung des VBS erstellt. Für die ganzen Filmproduktionen des ZEM werden in dieser Abteilung zudem die DVDs programmiert und bei kleineren Auflagen auch gleich gebrannt und bedruckt. 
+                    </p>                
+                </div>
+                
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">DVD Programmierung</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            Während deiner Stage bei den Interaktiven Medien wirst du lernen, wie man vom Rohmaterial zur fertigen DVD gelangt. Vom Konvertieren über die Gestaltung und Programmierung des DVD-Menus bis hin zum Brennvorgang und dem Druck lernst du allerlei interessante Arbeitsabläufe kennen.
+                        </p>                    
+                    </div>                
+                </div>
+
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">Archivierung</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            Vieles an Filmmaterial des damaligen Armeefilmdiensts sind noch nicht digital aufgenommen worden, sondern existieren nur auf VHS, Laserdisks oder Ähnlichem.  Das ZEM ist mit verschiedensten Geräten zum Digitalisieren dieses Materials ausgestattet und ich konnte eine ganze Serie an Laserdisks digitalisieren, nachbearbeiten und archivieren.
+                        </p>                    
+                    </div>                
+                </div>
+                
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">Testing</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            Die erstellten Lernprogramme und Apps laufen zwar auf der Infrastruktur derjenigen Personen, die diese entwickelt haben, doch das heisst nicht zwangsläufig dass es bei allen Anwendern genauso fehlerlos funktionieren wird. Deshalb ist das Testen ein äusserst wichtiger Schritt der Programmierung und wird dementsprechend sehr ernst genommen. Den Interaktiven Medien steht ein breites Repertoire an Testgeräten und –systemen zur Verfügung um auch den letzten Fehler aus dem Code zu entfernen.
+                        </p>                    
+                    </div>                
+                </div>
+
+                <div class="overlayfooter col-12 div-center">
+                    <p class="text16 light white centered">
+                        Und natürlich noch vieles mehr.<br>
+                        <label for="openIAM">
+                            <span class="lightlink footercloseoverlay">
+                                Hier klicken um zurück zur Übersicht zu kommen.
+                            </span>
+                        </label>
+                    </p>
+                </div>
+                
+            </div>  
+            
+            <label for="openIAM">
+                <div class="closeoverlay">
+                    <span class="icon icon-icon-close"></span>
+                </div>
+            </label>
+        </section>
+        
+        <section id="overlayMT" class="overlay">
+            <div class="overlaywrapper col-12 div-center animated fadeInUp">
+                <div class="sectionhead col-8 div-center">
+                    <h1 class="dark-aqua centered">Mediathek</h1> 
+                    <p class="subtitle light-blue-grey centered">            
+                        Die Mediathek ist das umfassende visuelle Gedächtnis des ZEM. In der Mediendatenbank mit Fotos und Videos werden alle aktuellen Produktionen des ZEM aufbereitet und auf den entsprechenden Plattformen veröffentlicht.
+                    </p>                
+                </div>
+                
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">Mediathek</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            Das Zentrum elektronische Medien bietet auf der Webseite <a class="darklink" href="https://www.mediathek.admin.ch/" alt="Mediathek." target="_blank">www.mediathek.admin.ch</a> eine umfassende Bilddatenbank rund um das Bundesamt für Verteidigung, Bevölkerungsschutz und Sport VBS. Du bearbeitest Bildbestellungen von extern und intern und klärst ab ob die bestellten Bilder verwendet werden dürfen und lieferst diese dann an den Kunden aus.<br>
+
+                            In <span class="counter bold">49</span> Bestellungen für <span class="counter bold">32</span> verschiedene Kunden habe ich insgesamt <span class="counter bold">435</span> Bilder ausgeliefert.
+                        </p>                    
+                    </div>                
+                </div>
+                
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">Webprojekte</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            In der Mediathek arbeitest du viel mit dem Internet und entwickelst auch dafür. Du erstellst kleine Webseiten von Grund auf und pflegst sowie aktualisierst diese und bereits vorhandene. Zudem hast du die Möglichkeit, neue Techniken zu lernen und anzuwenden. Beispiele hierfür sind GitHub, das Grav CMS, der Sass-Compiler und vieles mehr. Du bist immer auf dem aktuellsten Stand, was im Internet gerade angesagt ist. Folgende Projekte konnte ich umsetzen:
+                        </p>
+                        <div class="lb-wrapper">
+                            <a href="img/content/lightbox/mediathek-web/mediathek-digame.png" data-lightbox="mediathek-web"><img src="img/content/lightbox/mediathek-web/mediathek-digame.png" width="180"></a>
+                            <a href="img/content/lightbox/mediathek-web/mediathek-landing.png" data-lightbox="mediathek-web"><img src="img/content/lightbox/mediathek-web/mediathek-landing.png" width="180"></a>
+                        </div>
+                    </div>                
+                </div>
+                
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">Meetings</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            Jede Woche findet ein Teammeetig statt, in dem alle wichtigen Informationen unter den MitarbeiterInnen ausgetauscht werden als MediamatikerIn in der Mediathek nimmst du natürlich auch an diesem teil und hast auch ab und an die Gelegenheit, das Meeting zu leiten.
+                        </p>                    
+                    </div>                
+                </div> 
+                
+                <div class="overlayfooter col-12 div-center">
+                    <p class="text16 light white centered">
+                        Und natürlich noch vieles mehr.<br>
+                        <label for="openMT">
+                            <span class="lightlink footercloseoverlay">
+                                Hier klicken um zurück zur Übersicht zu kommen.
+                            </span>
+                        </label>
+                    </p>
+                </div>
+                
+                
+            </div>  
+            
+            
+            
+            <label for="openMT">
+                <div class="closeoverlay">
+                    <span class="icon icon-icon-close"></span>
+                </div>
+            </label>
+        </section>
+        
+        <section id="overlayPM" class="overlay">
+            <div class="overlaywrapper col-12 div-center animated fadeInUp">
+                <div class="sectionhead col-8 div-center">
+                    <h1 class="dark-aqua centered">Printmedien</h1> 
+                    <p class="subtitle light-blue-grey centered">            
+                        Die Printmedien erstellen Produktionen für alle möglichen Bereiche des VBS. Von der Beratung über die Konzeption bis hin zur Lieferung der Daten an die Druckerei wird hier alles gemacht. 
+                    </p>                
+                </div>
+            
+            
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">Einführung</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            Am Anfang deiner mehrmonatigen Stage bei den Printmedien wirst du einige Einführungsarbeiten durchführen. Diese helfen dir wieder in die Printproduktion hineinzukommen und gleichzeitig dein Wissen aus den ersten zwei Lehrjahren zu vertiefen.
+                        </p>                    
+                    </div>                
+                </div>
+
+                <div class="overlay-section col-10 div-center">
+                    <div class="overlay-title col-3">
+                        <h2 class="light-blue-grey uppercase">Printproduktion</h2>
+                    </div>
+                    <div class="overlay-text col-7">
+                        <p lang="de" class="text16 light light-blue-grey">
+                            Du hast anhand einer fiktiven Firma die Möglichkeit, dein Erlerntes anzuwenden und einen kompletten Auftritt vom Logo über Flyer bis hin zur Visitenkarte zu erstellen. Hierbei kannst du deiner Kreativität freien Lauf lassen und kriegst laufend Feedback von den MitarbeiterInnen der Printmedien. Nach Gelegenheit hast du auch die Möglichkeit ein Printprodukt zu erstellen, welches dann wirklich zum Einsatz kommt. Das ist eine tolle Gelegenheit!
+                        </p>
+                        <div class="lb-wrapper">
+                            <a href="img/content/lightbox/print-produkte/print-blaubuch.png" data-lightbox="print-produkte"><img src="img/content/lightbox/print-produkte/print-blaubuch.png" width="180"></a>
+                            <a href="img/content/lightbox/print-produkte/print-karte.png" data-lightbox="print-produkte"><img src="img/content/lightbox/print-produkte/print-karte.png" width="180"></a>
+                            <a href="img/content/lightbox/print-produkte/print-flyer.png" data-lightbox="print-produkte"><img src="img/content/lightbox/print-produkte/print-flyer.png" width="180"></a>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="overlayfooter col-12 div-center">
+                    <p class="text16 light white centered">
+                        Und natürlich noch vieles mehr.<br>
+                        <label for="openPM">
+                            <span class="lightlink footercloseoverlay">
+                                Hier klicken um zurück zur Übersicht zu kommen.
+                            </span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            
+            
+            <label for="openPM">
+                <div class="closeoverlay">
+                    <span class="icon icon-icon-close"></span>
+                </div>
+            </label>
+        </section>
+        
+        
+        
+        <section id="mdme">
+            <div class="sectionhead col-8 div-center">
+                <img height="70" src="img/content/icons/icon-me.svg">
+                <h1 class="dark-aqua centered">Über mich</h1> 
+                <p class="subtitle light-blue-grey centered">            
+                    Hallo. Ich bin Stefan und ich bin Mediamatiker im vierten Lehrjahr im ZEM. Diese Website erstellte ich im Rahmen meiner praktischen Abschlussarbeit (IPA) und möchte dir damit das Berufsbild Mediamatiker mit dem Hauptaugenmerk aufs ZEM näherbringen. Ich hoffe, dass mir das gelungen ist. 
+                </p>
+                
+                <div class="col-8 text-extender">
+                    <p class="text16 light centered">
+                        Möchtest du noch etwas mehr über mich und meine Zeit im ZEM erfahren? <br>
+                        Dann klicke hier um den Text zu erweitern. 
+                    </p>
+                </div>
+                
+            </div> 
+            
+            <div id="aboutme" class="col-8 div-center">
+                <p class="subtitle light-blue-grey animated fadeInUp">
+                    Meine Lehre habe ich im Jahr 2012 in der BiCT AG angefangen und dort eine zweijährige Grundausbildung in verschiedenen Programmen und Projekten sowie in visueller Kommunikation und Marketing erhalten. Als es Mitte des zweiten Lehrjahres an in die Bewerbungsphase ging, sprach mich der Stellenbeschrieb des ZEM sofort an, so dass ich mich beworben habe und zu einem Bewerbungsgespräch eingeladen wurde. Wenige Zeit später habe ich schliesslich die erfreuliche Nachricht erhalten, dass ich ab Sommer 2014 meine Lehre im Zentrum elektronische Medien weiterführen kann.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                    Während meiner Zeit im ZEM durfte ich viele neue Erfahrungen sammeln. Ich schätze das moderne Arbeitsumfeld und die Infrastruktur. Ausserdem finde ich es super, dass ich in verschiedene Bereiche reinschauen konnte und mich auch bei verschiedenen Projekten selbstständig und im Team beteiligen konnte.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                     Ein absolutes Highlight waren die zwei Einsätze bei denen ich jeweils ein Filmteam begleiten und unterstützen durfte. Beim ersten Einsatz drehten wir im Auftrag der Spitzensport Rekrutenschule bei der Skisprungschanze in Einsiedeln. Dort lernte ich unter anderem Simon Amman kennen und lernte wie man ein Filmset für ein Interview aufbaut und man eindrückliche Momentaufnahmen einfängt.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                    Bei meinem zweiten Einsatz durfte ich in Wangen an der Aare bei einer Katastrophenübung mit dabei sein. Besonders spannend hierbei war für mich die Tatsache, dass ich gemeinsam mit zwei Berufspiloten in einem Super Puma der Schweizer Armee bei der ganzen Übung mitten im Geschehen dabei sein und die ganzen Eindrücke mit der Kamera festhalten konnte.
+                </p>
+                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                    Nebst diesen beiden Anlässen durfte ich gemeinsam mit anderen Lernenden beim Jahresanlass der Logistikbasis der Armee in Grenchen mithelfen. Dies war sehr eindrücklich, da das ganze eine riesige logistische Herausforderung darstellte, weil alle Mitarbeiter aus der ganzen Schweiz bei diesem Anlass teilnahmen.            
+                </p>
+                            
+            </div>
+        </section>
+        
+        
+        <section id="mdfooter">
+            <div class="sectionhead col-8 div-center">
+                <h1 class="dark-aqua centered">Zentrum elektronische Medien</h1> 
+                <p class="subtitle light-blue-grey centered">            
+                    Das Zentrum elektronische Medien (ZEM) ist das zentrale Medienhaus des Bundesamtes für Verteidigung, Bevölkerungsschutz und Sport (VBS). Im ZEM werden Produkte und Dienstleistungen in den Bereichen Ausbildung und Kommunikation erstellt. In den Bereichen Audiovisuelle Medien, Foto, Interaktive Medien, Mediathek und Print werden Lösungen für jeden Kunden passend erarbeitet und umgesetzt.<br>
+                    Das ZEM wertet mit einer modernen Infrastruktur, einem angenehmen Arbeitsumfeld und interessanten Projekten auf. 
+
+                </p>
+            </div>
+            
+            <div id="map-wrapper">
+            
+            <div id="map">
+            </div>
+                
+                <div class="map-overlapping col-6 border">
+                    <img height="70" src="img/content/icons/icon-marker.svg">
+                    <h2 class="centered light-blue-grey uppercase">Zentrum elektronische Medien</h2>
+                    <p class="text16 centered light light-blue-grey">
+                        Verteidigung<br>
+                        Zentrum elektronische Medien<br>
+                        Stauffacherstrasse 65/Geb 14<br>
+                        CH-3003 Bern<br>
+                    </p>
+                </div>
+            
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+            <script type="text/javascript">
+                // Die Karte wird eingefügt, wenn das Fenster geladen hat. 
+                google.maps.event.addDomListener(window, 'load', init);
+
+                function init() {
+                    // Grundlegende Optionen zur Einbettung von Google Maps.
+                    // Weitere Einstellungsmöglichkeiten können unter folgendem Link eingesehen werden: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                    var mapOptions = {
+                        // Die Zoomstufe, auf der sich die Karte befinden soll. Dieser Wert ist immer notwendig und muss definiert werden.
+                        zoom: 16,
+                        // Mit der folgenden Einstellung kann festgelegt werden, ob die Standardbenutzeroberfläche mit Zoomregler usw. angezeigt werden soll oder nicht.
+                        disableDefaultUI: true,
+                        // Hiermit habe ich das Scrollen mit dem Mausrad deaktiviert. Das ist besonders für Notebooknutzer hilfreich, da sie sonst vom Scrollen der Webseite abgehalten werden können.
+                        scrollwheel: false,  
+                        // Hier werden Latitude und Langitude des geünschten Kartenausschnitts festgelegt. Diese Einstellung ist immer notwendig.
+                        center: new google.maps.LatLng(46.966881, 7.454935),
+                        // Hier wird der Style der Map definiert. Hier kann der bei Snazzymaps generierte Code eingefügt werden.
+                        styles: [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"landscape.natural.terrain","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#53a8b6"},{"visibility":"on"}]}]
+                    };
+                    // Definieren, in welchem Element die Karte angezeigt werden soll.
+                    var mapElement = document.getElementById('map');
+                    var map = new google.maps.Map(mapElement, mapOptions);
+                    // Erstellen einer Markierung auf der Karte.
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(46.966881, 7.454935),
+                        map: map,
+                        icon: 'img/layout/marker-solid.png',
+                        title: 'Zentrum elekronische Medien ZEM'
+                    });
+                }
+            </script>
+                
+            <div class="clearfix"></div>
+                
+            </div>
+            
+            
+            <div class="more-info col-8 div-center">
+                <p class="subtitle light-blue-grey centered">
+                    Besuche uns auf einer unserer Webplattformen:
+                </p>
+            </div>
+            
+            
+            <section class="link-buttons col-12 div-center">
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="https://www.zem.ch" target="_blank">Website ZEM</a></h2>             
+                </div>
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="https://www.mediathek.admin.ch" target="_blank">mediathek.admin.ch</a></h2>             
+                </div>
+                
+                <div class="external-button col-4">
+                    <h2 class="light-blue-grey"><a href="https://vp.zem.ch" target="_blank">Videoportal</a></h2>             
+                </div>
+            
+                <div class="clearfix"></div>
+            
+            
+            
+            </section>
+            
+            <section class="footer-notice">
+                <p class="text16 col-8 light div-center centered light-grey">
+                    Diese Webseite basiert vollständig auf den modernen Webtechnologien HTML5, CSS3 und Javascript / jQuery. <br>
+                    Beim Erstellen kam der CSS-Compiler Sass zum Einsatz. 
+                </p>
+            </section>
+            
+            <section class="footer-end">
+                <p class="text16 light centered light-grey">
+                    Mit viel <span class="icon icon-icon-heart"></span> im ZEM erstellt. 
+                </p>
+            </section>
+        
+        
+        </section>
+        
+        
+        
+            <!-- Piwik zur Erfassung von Statistiken der Webseite. -->
+                <script type="text/javascript">
+                 var _paq = _paq || [];
+                 _paq.push(["setDomains", ["*.zemmediamatiker.github.io"]]);
+                 _paq.push(['trackPageView']);
+                 _paq.push(['enableLinkTracking']);
+                 (function() {
+                   var u="//stats.zem.ch/";
+                   _paq.push(['setTrackerUrl', u+'piwik.php']);
+                   _paq.push(['setSiteId', 12]);
+                   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+                 })();
+                </script>
+                <noscript><p><img src="//stats.zem.ch/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
+            <!-- Ende Piwik Code -->
+        
+        <script src="js/jquery1.12.0.min.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/counterup.min.js"></script>    
+        <script src="js/wow.min.js"></script>
+        
+        <script>           
+            //Initialisieren des jQuery CountUp-Plugins
+            jQuery(document).ready(function() {
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 2000
+                });
+            });            
+        </script>
+        
+        <script>
+            lightbox.option({
+                'albumLabel': "Bild %1 von %2"
+            })
+        </script>
+        
+        <script>    
+            // Initialisierung des wow.js-Plugins.
+            new WOW().init();
+        </script>
+        
+        <script src="js/jquery.inview.js"></script>
+        <script src="js/video-js/video.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

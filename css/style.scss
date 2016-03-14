@@ -1,3 +1,13 @@
+/* - - - - - - - - - -
+
+    CSS-Datei für die IPA:
+    "Interaktives Berufsportrait eines Mediamatikers"
+    2016 | Zentrum elektronische Medien | Stefan Eckstein
+
+- - - - - - - - - - */
+
+
+
 /*
  Definieren der Variablen, um im Verlauf des Dokuments auf diese zurückgreifen zu können.
 */
@@ -9,8 +19,11 @@ $md-bright-aqua: rgba(0,173,181,1);
 $md-dark-aqua: rgba(83,168,182,1);
 $md-light-aqua: rgba(121,194,2018,1);
 $md-lightest-aqua: rgba(187,228,233,1);
+$md-grey: rgba(86,86,86,1);
+$md-dark-grey: rgba(55,55,55,1);
 $md-light-grey: rgba(238,238,238,1);
 $md-white-grey: rgba(248,248,248,1);
+$md-white: rgba(255,255,255,1);
 
 // Schrift
 $bold: 'source_sans_pro_bold', sans-serif;
@@ -24,26 +37,116 @@ $light: 'source_sans_pro_light', sans-serif;
     padding: 0;
     box-sizing: border-box;
     border: none;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important; 
 }
 
 
-.infinite{
-    animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
+p { 
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; 
 }
+
+
+.white{
+    color: $md-white;
+}
+
 
 .light-blue-grey{
     color: $md-light-blue-grey;
+    a{
+        color: $md-light-blue-grey;
+    }
+    a:visited{
+        color: $md-light-blue-grey;
+    }
+}
+
+.bg-light-blue-grey{
+    background: $md-light-blue-grey;
+    color: $md-light-grey;
 }
 
 .dark-aqua{
     color: $md-dark-aqua;
 }
 
+.bg-dark-aqua{
+    background: $md-dark-aqua;
+}
+
+.light-grey{
+    color: $md-light-grey;
+    a{
+        color: $md-light-grey;
+    }
+    a:visited{
+        color: $md-light-grey;
+    }
+}
+
+
+.bg-light-grey{
+    background: $md-light-grey;
+}
+
+.border{
+    border: 1px solid #cdcccc;
+}
+
+/* - - - - - - - - - -
+
+    Alle globalen Textformatierungen für verschiedene Formate und Grössen.
+
+- - - - - - - - - - */
+
 h1{
     font-size: 56px;
+    font-family: $bold;
+    letter-spacing: -1px;
+}
+
+h2{
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    font-family: $bold;
+}
+
+a{
+    text-decoration: none;
+    padding-bottom:1px;
+}
+
+.lightlink{
+    border-bottom:1px dotted $md-light-grey;
+}
+
+.darklink{
+    border-bottom:1px dotted $md-light-blue-grey;
+}
+
+.text16{
+    line-height: 24px;
+    font-size: 16px;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.light{
+    font-family: $light;
+}
+
+.bold{
     font-family: $bold;
 }
 
@@ -53,18 +156,185 @@ h1{
     line-height: 34px;
 }
 
-
-
 .centered{
     text-align: center;
 }
 
+.quote{
+    padding: 100px 0px;
+}
+
+.more-info{
+    padding: 100px 0px 50px 0px;
+}
+
+.lb-wrapper{
+    margin-top: 50px;
+    a{
+        margin: 0px 10px;
+    }
+    a:first-child{
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+.countup-number-big{
+    font-size: 56px;
+    color: $md-dark-aqua;
+}
+
+
+/* - - - - - - - - - -
+
+    Globale Eigenschaften, die im Verlauf des Dokuments immer wieder vorkommen können und deshalb einfach als Klasse vergeben werden.
+
+- - - - - - - - - - */
+
+/*
+    Abgerundete Buttons mit Icon für ausgehende Links am Ende einer <section> um weitere Informationen zur Verfügung zu stellen.
+*/
+
+.link-buttons{
+    padding: 0px 0px 100px 0px;
+}
+
+.external-button{
+    border-radius: 12px;
+    border: 1px solid #cdcccc;
+    padding: 25px;
+    float: left;
+    margin: 10px;
+    h2{
+        letter-spacing: 0;
+        position: relative;
+        margin-left: 50px;
+        a{
+            color: $md-light-blue-grey;
+            text-decoration: none;
+            margin: -25px -40px -25px -40px;
+            padding: 25px 40px 25px 40px;
+        }
+    }
+    h2:before{
+        font-family: 'iconzem';
+        content: "\64";
+        color: $md-dark-aqua;
+        font-size: 18px;
+        position: absolute;
+        top: 8px;
+        left: -50px;
+    }
+}
+
+.external-button:nth-child(3n+3){
+    margin-right: 0px;
+}
+
+.external-button:nth-child(3n+1){
+    margin-left: 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.vhidden{
+    visibility: hidden;
+}
+
+.noscroll{
+    overflow: hidden;
+}
+
+
+/*
+    Diese Klasse ist dazu da, um am Anfang einer neuen Section den Titel und den kurzen Einleitungstext pasend zu positionieren.
+*/
+.sectionhead{
+    padding: 200px 0px 100px 0px;
+    text-align: center;
+}
+
+/* - - - - - - - - - -
+
+    Alle Formatierungen und Eigenschaften für den Loader.
+
+- - - - - - - - - - */
+
+#mdloader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 30; 
+    background: $md-light-blue-grey url(../img/layout/md-loader-pattern.png);
+    .fullwidth{
+        position: fixed;
+        left: 0px;
+        right: 0px;
+    }
+    #header-logo{
+        margin-top: 20px;
+    }
+}
+
+#mdloader-content{
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.loaderbar-wrapper{
+    height: 4px;
+    background: $md-dark-aqua;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    right: 0px;
+}
+
+.loaderbar{
+    width: 0px;
+    height: 4px;
+    border-radius: 4px;
+    background: $md-white-grey;
+    animation: loader 20s ease;
+}
+
+@keyframes loader{
+		from{
+			width: 0px;
+		}
+        20%{
+            width: 60px;
+        }
+        50%{
+            width: 100px;
+        }
+        to {
+			width: 180px;
+		}
+	}
+
+.loaded{
+    width: 180px !important;
+}
+
+
+/* - - - - - - - - - -
+
+    Alle Formatierungen und Eigenschaften für den Header der sichtbar ist, wenn die Seite aufgerufen wird und der Loader ausgeblentet ist.
+
+- - - - - - - - - - */
+
 header{
     width: 100%;
     height: 80px;
-    z-index: 5;
+    z-index: 25;
     position: fixed;
     padding: 20px 0px 0px 0px;
+    transition: 0.5s ease;
 }
 
 #header-logo{
@@ -86,9 +356,504 @@ header{
 
 #mdhome-skyline{
     margin: 0px auto 30px auto;
+    animation-delay: 0.2s;
 }
 
 
+#scrolldown{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    .text16{
+        margin: 0px 0px 20px 0px;
+        padding: 0px 58px;
+    }
+    span{
+        margin: -20px;
+        padding: 20px;
+        cursor: pointer;
+    }
+    
+    .scrollhint{
+        animation-delay: 8s;
+        animation-iteration-count: 3;
+    }
+    
+    /*
+        Angepasste Animation von Animate.css, dass das Element ein wenig schwächer auf und ab hüpft und so weniger hektisch wirkt.
+    */
+
+    @-webkit-keyframes bounce {
+      from, 20%, 53%, 80%, to {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+      }
+      40%, 43% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+      }
+
+      70% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+      }
+
+      90% {
+        -webkit-transform: translate3d(0,-4px,0);
+        transform: translate3d(0,-4px,0);
+      }
+    }
+
+    @keyframes bounce {
+    from, 20%, 53%, 80%, to {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+      }
+      40%, 43% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+      }
+
+      70% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+      }
+
+      90% {
+        -webkit-transform: translate3d(0,-4px,0);
+        transform: translate3d(0,-4px,0);
+      }
+    } // Ende Animationsanpassungen
+
+}
+
+
+.infinite{
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für den Bereich "Wie werde ich MediamatikerIn?"
+
+- - - - - - - - - - */
+
+
+#mdwie{
+    width: 100%;
+    background: $md-white-grey;
+}
+
+#videosection{
+    height: 638px;
+    background: $md-blue-grey;
+    position: relative;
+    overflow: hidden;   
+    
+}
+
+/*
+    Der Bereich des Videoplayers mit dem geblurten Hintergrundbild.
+*/
+
+#video{
+    z-index: 5 !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);      
+}
+
+#video:before{
+    content: "";
+    position: absolute;
+    background: url(../img/screenshot-video.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transform: scale(1.1); // Hiermit und der overflow: hidden des Elternelements können wir die verschwommenen Ränder des Hintergrundbildes resultierend aus dem Blurfilter verstecken.
+    opacity: 0.2;
+}
+
+
+#playerwrapper{
+    position: relative;
+    z-index: 10 !important;
+    margin: 100px auto 35px auto;
+    p{
+        margin-top: 35px;
+    }
+}
+
+#videoplayer{
+    background: red;
+}
+
+.grid-item{
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    img{
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+}
+
+.grid-item:first-child{
+    margin-left: 0;
+}
+
+.grid-item:last-child{
+    margin-right: 0;
+}
+
+.grid-item:nth-child(3n+3){
+    margin-right: 0;
+}
+
+.grid-item:nth-child(3n+1){
+    margin-left: 0;
+}
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für den Bereich "Berufsschule"
+
+- - - - - - - - - - */
+
+
+#mdschule{
+    .external-button{
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    .external-button:nth-child(3n+1){
+        margin-left: auto !important;
+    }
+    
+}
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für den Bereich "Der Weg ins ZEM"
+
+- - - - - - - - - - */
+
+
+#mdweg{
+    background: $md-white-grey;
+}
+
+.timeline-box{
+    background: $md-white;
+    border-radius: 12px;
+    padding: 30px 80px;
+    text-align: center;
+    img{
+        margin-bottom: 20px;
+    }
+}
+
+.timeline-line{
+    width: 2px;
+    height: 50px;
+    background: $md-dark-aqua;
+}
+
+.timeline-circle{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid $md-dark-aqua;
+}
+
+.timeline-milestone{
+    width: 220px;
+    height: 60px;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1;
+    background: $md-dark-aqua;
+    
+}
+
+.timeline-end{
+    margin-top: 50px !important;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#timeline-facts{
+    background: $md-light-grey;
+    padding-bottom: 100px;
+}
+
+.inline-spacer{
+    display: inline-block;
+}
+
+.inline-box{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px;
+    padding: 25px;
+    text-align: center;
+    img{
+        margin-bottom: 20px;
+    }
+}
+
+.inline-box:nth-child(3n+1){
+    margin-left: 0px;
+}
+
+.inline-box:nth-child(3n+3){
+    margin-right: 0px;
+}
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für den Bereich "Das ZEM und seine Bereiche"
+
+- - - - - - - - - - */
+
+#mdbereiche{
+    padding-bottom: 100px;
+}
+
+.bereiche-wrapper{
+    .inline-box{
+        border-radius: 12px;
+    }
+    .box-label{
+        cursor: pointer;
+        display: inline-block;
+    }
+    label{
+        .inline-box:nth-child(3n+1){
+            margin-left: 0px;
+        }
+
+        .inline-box:nth-child(3n+3){
+            margin-right: 0px;
+        }
+    }
+}
+
+.overlay-button{
+    background: $md-dark-aqua;
+    border: 2px solid $md-dark-aqua;
+    margin-top: 20px !important;
+    border-radius: 12px;
+    padding: 4px;
+    h2{
+        font-size: 20px;
+        color: $md-white;
+    }
+    transition: 0.5s ease;
+}
+
+.overlay-button:hover{
+    background: $md-white;
+    border: 2px solid $md-dark-aqua;
+    h2{
+        color: $md-dark-aqua;
+    }
+}
+
+
+
+
+.overlay{
+    position: fixed;
+	overflow: hidden;
+    display: none;
+    top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+	background: rgba(0,0,0,0.89);
+    overflow-y: scroll;
+}
+
+.overlaywrapper{
+    margin-top: 100px !important;
+    background: $md-light-grey;
+    .sectionhead{
+        padding: 100px 0px;
+    }
+}
+
+.overlay-section{
+    padding: 100px 0px;
+    border-top: 1px solid #d2d2d2;    
+}
+
+.overlay-section:last-child{
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.overlay-text{
+    display: inline-block;
+    br{
+        margin-bottom: 20px;
+    }
+    
+}
+
+.overlay-title{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.overlayfooter{
+    background: $md-light-blue-grey;
+    padding: 50px;
+    margin-bottom: 100px !important;
+}
+
+.closeoverlay{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    color: $md-white-grey;
+    span{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.footercloseoverlay{
+    cursor: pointer;
+}
+
+
+input#openIAM[type="checkbox"]:checked ~ #overlayIAM {
+  display: block;
+}
+
+input#openMT[type="checkbox"]:checked ~ #overlayMT {
+  display: block;
+}
+
+input#openPM[type="checkbox"]:checked ~ #overlayPM {
+  display: block;
+}
+
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für den Bereich "Über mich"
+
+- - - - - - - - - - */
+
+
+#mdme{
+    background: $md-white-grey;
+    padding-bottom: 100px;
+    transition: 2s ease;
+}
+
+.text-extender{
+    margin: 80px 0px 0px 0px;
+    cursor: pointer;
+}
+
+
+
+#aboutme{
+    display: none;
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+.text-visible{
+    display: block !important;
+}
+
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für den Bereich "Footer"
+
+- - - - - - - - - - */
+
+#mdfooter{
+    .subtitle{
+        br{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+#map-wrapper{
+    position: relative;
+}
+
+#map{
+    width: 100%;
+    height: 550px;
+    margin-bottom: 180px;
+}
+
+.map-overlapping{
+    position: absolute;
+    margin: auto;
+    position: absolute;
+    left: 0; bottom: 0; right: 0;
+    margin-top: -10px;
+    z-index: 5;
+    border-radius: 12px;
+    background: $md-white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    //box-shadow: 0px 0px 36px 0px rgba(135,135,135,0.42);
+    img{
+        margin-bottom: 20px;
+    }
+}
+
+.footer-notice{
+    padding: 50px 0px;
+    background: $md-grey;
+}
+
+.footer-end{
+    padding: 20px 0px;
+    background: $md-dark-grey;
+    .icon-icon-heart{
+        color: $md-dark-aqua;
+    }
+}
+
+/* - - - - - - - - - -
+
+    Die Eigenschaften und Formatierungen für das 12er Grid.
+
+- - - - - - - - - - */
 
 .col-1{
     width: 80px;
@@ -153,10 +918,6 @@ header{
     height: 0px;
 }
 
-
-
-
-
 /*
     Einbinden der Webfonts
 
@@ -214,38 +975,134 @@ header{
     font-style: normal;
 }
 
+
 @font-face {
-    font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?6dspxr');
-    src:    url('../fonts/icomoon.eot?6dspxr#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?6dspxr') format('truetype'),
-        url('../fonts/icomoon.woff?6dspxr') format('woff'),
-        url('../fonts/icomoon.svg?6dspxr#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "iconzem";
+  src:url("../fonts/iconzem.eot");
+  src:url("../fonts/iconzem.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iconzem.woff") format("woff"),
+    url("../fonts/iconzem.ttf") format("truetype"),
+    url("../fonts/iconzem.svg#iconzem") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-[class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+[data-icon]:before {
+  font-family: "iconzem" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "iconzem" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-icon-arrow-down:before {
-    content: "\e900";
+  content: "\61";
 }
 .icon-icon-close:before {
-    content: "\e901";
+  content: "\62";
+}
+.icon-icon-heart:before {
+  content: "\63";
 }
 .icon-icon-link:before {
-    content: "\e902";
+  content: "\64";
+}
+
+
+/*
+    Einbinden der Formatierungen des Skindesigner für Video.js
+    Lizenz "Player Skin Designer":
+
+    Player Skin Designer for Video.js
+
+    This designer can be linked to at:
+    http://codepen.io/heff/pen/EarCt/left/?editors=010
+*/
+.video-js {
+  font-size: 10px;
+  color: #fff;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 3em;
+  /* 1.5em = 45px default */
+  line-height: 2em;
+  height: 2em;
+  width: 2em;
+  /* 0.06666em = 2px default */
+  border: 0.06666em solid #fff;
+  /* 0.3em = 9px default */
+  border-radius: 2em;
+  /* Align center */
+  left: 50%;
+  top: 50%;
+  margin-left: -1em;
+  margin-top: -1em;
+}
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  background-color: #3a4750;
+  background-color: rgba(58, 71, 80, 0.7);
+}
+
+.video-js .vjs-slider {
+  background-color: #899ca9;
+  background-color: rgba(137, 156, 169, 0.5);
+}
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: #fff;
+}
+
+.video-js .vjs-current-time, .vjs-no-flex .vjs-current-time {
+  display: block !important;
+}
+
+.vjs-playback-rate {
+  display: none;
+}
+
+.vjs-remaining-time {
+  display: none;
+}
+
+.vjs-mouse-display {
+  display: none !important;
+}
+
+.video-js .vjs-progress-control:hover .vjs-play-progress:after {
+  display: none;
+}
+
+.video-js .vjs-load-progress {
+  background: ligthen(#899ca9, 25%);
+  background: rgba(137, 156, 169, 0.5);
+}
+
+.video-js .vjs-load-progress div {
+  background: ligthen(#899ca9, 50%);
+  background: rgba(137, 156, 169, 0.75);
 }

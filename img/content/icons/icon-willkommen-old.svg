@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" id="Luftballon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="62px" height="150px" viewBox="0 0 62 150" xml:space="preserve">
+<style type="text/css">
+
+	.st1{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+
+    
+	.st1{
+		stroke-dasharray: 250;
+		stroke-dashofset: 0;
+		animation: ballon-outer 3s ease  ;
+		-webkit-animation: ballon-outer 3s ease infinite ;
+		stroke:#54a8b6;
+    
+	}
+
+	.st2{
+		stroke-dasharray: 62;
+		stroke-dashofset: 0;
+		-webkit-animation: dash 3s ease infinite;
+		animation: reflection 3s ease ;
+		stroke:#54a8b6;
+	}
+
+	.st3{
+		stroke-dasharray: 114;
+		stroke-dashofset: 0;
+		-webkit-animation: dash 3s ease infinite;
+		animation: band 3s ease ;
+		stroke:#54a8b6;
+	}
+
+	#lb-ende{
+        fill: none;
+        stroke:#54a8b6;
+		stroke-dasharray: 52;
+		stroke-dashofset: 0;
+		-webkit-animation: ventil 3s ease infinite;
+		animation: ventil 3s ease ;
+        stroke-width:4;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+        
+	}
+
+	@keyframes ballon-outer{
+		from{
+			stroke-dashoffset: 250;
+		} to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@keyframes ventil{
+		from{
+			stroke-dashoffset: 52;
+		} to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@keyframes reflection{
+		from{
+			stroke-dashoffset: 62;
+		} to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@keyframes band{
+		from{
+			stroke-dashoffset: 114;
+		} to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+
+</style>
+<g id="lb-group">
+	<path id="lb-ballon" class="st1" d="M50.2,28.5c17.3,0,31.4,14,31.4,31.4c0,11.6-4.7,25.4-19.6,38.9c-2.9,2.4-5.7,3.9-11.7,4.2   c-6.1-0.3-8.9-1.8-11.8-4.2C23.5,85.2,18.9,71.5,18.9,59.9C18.9,42.6,32.9,28.5,50.2,28.5z"/>
+	<path id="lb-reflektion" class="st2" d="M30.4,53.8c2.9-8,10-13.9,18.7-15"/>
+	<path id="lb-ende" class="st0" d="M53.4,104 60.7,117.4 39.8,117.4 47,104.4  "/>
+	<path id="lb-schnur" class="st3" d="M47.2,123.5c0,0-10.1,9.6,4.1,23.8c14.4,14.4-4.1,25-4.1,25"/>
+</g>
+</svg>
