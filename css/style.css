@@ -199,7 +199,8 @@ a {
     left: 0px;
     right: 0px; }
   #mdloader #header-logo {
-    margin-top: 20px; }
+    margin-top: 20px;
+    background: url(../img/layout/md-logo-admin-vbs-inv.svg) no-repeat; }
 
 #mdloader-content {
   margin: 0 auto;
@@ -249,7 +250,9 @@ header {
   transition: 0.5s ease; }
 
 #header-logo {
-  margin: 0px 0px 0px -30px; }
+  margin: 0px 0px 0px -30px;
+  height: 42px;
+  background: url(../img/layout/md-logo-admin-vbs.svg) no-repeat; }
 
 #mdhome {
   width: 100%;
@@ -334,6 +337,10 @@ header {
 /*
     Der Bereich des Videoplayers mit dem geblurten Hintergrundbild.
 */
+#video-mediamatiker {
+  width: 780px;
+  height: 439px; }
+
 #video {
   z-index: 5 !important;
   position: absolute;
@@ -363,9 +370,6 @@ header {
   margin: 100px auto 35px auto; }
   #playerwrapper p {
     margin-top: 35px; }
-
-#videoplayer {
-  background: red; }
 
 .grid-item {
   padding: 20px;
@@ -406,6 +410,8 @@ header {
 - - - - - - - - - - */
 #mdweg {
   background: #f8f8f8; }
+  #mdweg .sectionhead p {
+    width: 780px; }
 
 .timeline-box {
   background: white;
