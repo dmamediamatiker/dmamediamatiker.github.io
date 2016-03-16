@@ -262,6 +262,10 @@
             </section>
         </section>
         
+        <section id="img-zem" class="md-hero-image">        
+        
+        </section>
+        
         
         <section id="mdschule">
             <div class="pagewidth bg-light-blue-grey">
@@ -347,8 +351,11 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
-                    Lehrbeginn
+                <div class="timeline-ms-wrapper div-center wow fadeInUp">
+                    <div class="timeline-milestone div-center"></div>
+                    <p class="timeline-ms-text bold uppercase centered">
+                        Lehrbeginn
+                    </p>                     
                 </div>
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
@@ -373,8 +380,11 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
-                    Lehrstelle
+                <div class="timeline-ms-wrapper div-center wow fadeInUp">
+                    <div class="timeline-milestone div-center"></div>
+                    <p class="timeline-ms-text bold uppercase centered">
+                        Lehrstelle
+                    </p>                     
                 </div>
                 
                 <div class="timeline-end col-8 div-center">
@@ -497,7 +507,11 @@
                     </p>                
                 </div>
                 
-                <div class="overlay-section col-10 div-center">
+                <div class="overlay-image div-center">
+                    <img src="img/layout/md-iam.jpg">               
+                </div>
+                
+                <div class="overlay-section overlay-nbt col-10 div-center">
                     <div class="overlay-title col-3">
                         <h2 class="light-blue-grey uppercase">DVD Programmierung</h2>
                     </div>
@@ -697,20 +711,32 @@
                 
             </div> 
             
-            <div id="aboutme" class="col-8 div-center">
-                <p class="subtitle light-blue-grey animated fadeInUp">
+            <div id="aboutme" class="col-10 div-center">
+                <p class="subtitle light-blue-grey col-8 div-center animated fadeInUp">
                     Meine Lehre habe ich im Jahr 2012 in der BiCT AG angefangen und dort eine zweijährige Grundausbildung in verschiedenen Programmen und Projekten sowie in visueller Kommunikation und Marketing erhalten. Als es Mitte des zweiten Lehrjahres an in die Bewerbungsphase ging, sprach mich der Stellenbeschrieb des ZEM sofort an, so dass ich mich beworben habe und zu einem Bewerbungsgespräch eingeladen wurde. Wenige Zeit später habe ich schliesslich die erfreuliche Nachricht erhalten, dass ich ab Sommer 2014 meine Lehre im Zentrum elektronische Medien weiterführen kann.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                     Während meiner Zeit im ZEM durfte ich viele neue Erfahrungen sammeln. Ich schätze das moderne Arbeitsumfeld und die Infrastruktur. Ausserdem finde ich es super, dass ich in verschiedene Bereiche reinschauen konnte und mich auch bei verschiedenen Projekten selbstständig und im Team beteiligen konnte.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                      Ein absolutes Highlight waren die zwei Einsätze bei denen ich jeweils ein Filmteam begleiten und unterstützen durfte. Beim ersten Einsatz drehten wir im Auftrag der Spitzensport Rekrutenschule bei der Skisprungschanze in Einsiedeln. Dort lernte ich unter anderem Simon Amman kennen und lernte wie man ein Filmset für ein Interview aufbaut und man eindrückliche Momentaufnahmen einfängt.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <div class="about-img col-10 div-center wow fadeInUp">
+                    <img src="img/content/md-super-puma.jpg">
+                    <p class="text16 light centered">
+                        Super Puma der Schweizer Armee.
+                    </p>
+                </div>
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                     Bei meinem zweiten Einsatz durfte ich in Wangen an der Aare bei einer Katastrophenübung mit dabei sein. Besonders spannend hierbei war für mich die Tatsache, dass ich gemeinsam mit zwei Berufspiloten in einem Super Puma der Schweizer Armee bei der ganzen Übung mitten im Geschehen dabei sein und die ganzen Eindrücke mit der Kamera festhalten konnte.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <div class="about-img col-10 div-center wow fadeInUp">
+                    <img src="img/content/md-jarap.jpg">
+                    <p class="text16 light centered">
+                        Jahresrapport der LBA im Velodrome Grenchen.
+                    </p>
+                </div>
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                     Nebst diesen beiden Anlässen durfte ich gemeinsam mit anderen Lernenden beim Jahresanlass der Logistikbasis der Armee in Grenchen mithelfen. Dies war sehr eindrücklich, da das ganze eine riesige logistische Herausforderung darstellte, weil alle Mitarbeiter aus der ganzen Schweiz bei diesem Anlass teilnahmen.            
                 </p>
                             
@@ -758,7 +784,8 @@
                         // Mit der folgenden Einstellung kann festgelegt werden, ob die Standardbenutzeroberfläche mit Zoomregler usw. angezeigt werden soll oder nicht.
                         disableDefaultUI: true,
                         // Hiermit habe ich das Scrollen mit dem Mausrad deaktiviert. Das ist besonders für Notebooknutzer hilfreich, da sie sonst vom Scrollen der Webseite abgehalten werden können.
-                        scrollwheel: false,  
+                        scrollwheel: false, 
+                        draggable: false,
                         // Hier werden Latitude und Langitude des geünschten Kartenausschnitts festgelegt. Diese Einstellung ist immer notwendig.
                         center: new google.maps.LatLng(46.966881, 7.454935),
                         // Hier wird der Style der Map definiert. Hier kann der bei Snazzymaps generierte Code eingefügt werden.

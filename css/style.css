@@ -183,6 +183,17 @@ a {
   padding: 200px 0px 100px 0px;
   text-align: center; }
 
+.md-hero-image {
+  width: 100%;
+  height: 600px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#img-zem {
+  background: url(../img/layout/md-zem.jpg) no-repeat center center fixed; }
+
 /* - - - - - - - - - -
 
     Alle Formatierungen und Eigenschaften für den Loader.
@@ -432,14 +443,22 @@ header {
   border-radius: 50%;
   border: 2px solid #53a8b6; }
 
+.timeline-ms-wrapper {
+  width: 220px; }
+
 .timeline-milestone {
-  width: 220px;
-  height: 60px;
-  font-size: 24px;
-  padding: 20px;
-  border-radius: 12px;
-  line-height: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  -ms-transform: rotate(45deg) !important;
+  -webkit-transform: rotate(45deg) !important;
+  transform: rotate(45deg) !important;
   background: #53a8b6; }
+
+.timeline-ms-text {
+  color: #53a8b6;
+  margin: 20px 0px;
+  font-size: 24px; }
 
 .timeline-end {
   margin-top: 50px !important;
@@ -527,6 +546,14 @@ header {
 .overlay-section:last-child {
   border-bottom: 1px solid #d2d2d2; }
 
+.overlay-nbt {
+  border-top: none; }
+
+.overlay-image {
+  width: 100%; }
+  .overlay-image img {
+    width: 100%; }
+
 .overlay-text {
   display: inline-block; }
   .overlay-text br {
@@ -590,6 +617,11 @@ input#openPM[type="checkbox"]:checked ~ #overlayPM {
 
 .text-visible {
   display: block !important; }
+
+.about-img {
+  margin: 50px auto !important; }
+  .about-img img {
+    width: 100%; }
 
 /* - - - - - - - - - -
 

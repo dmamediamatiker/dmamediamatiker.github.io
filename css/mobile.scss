@@ -8,69 +8,23 @@
 
 @media only screen and (max-width: 640px){
     
-    /*.col-1{
-    width: 35px;
-    }
-
-    .col-2{
-        width: 90px;
-    }
-
-    .col-3{
-        width: 145px;
-    }
-
-    .col-4{
-        width: 200px;
-    }
-
-    .col-5{
-        width: 255px;
-    }
-
-    .col-6, .halfwidth{
-        width: 310px;
-    }
-
-    .col-7{
-        width: 365px;
-    }
-
-    .col-8{
-        width: 420px;
-    }
-
-    .col-9{
-        width: 475px;
-    }
-
-    .col-10{
-        width: 530px;
-    }
-
-    .col-11{
-        width: 585px;
-    }
-
-    .col-12{
-        width: 640px;
-    }
-    
-    .fullwidth{
-        width: 100%;
-    }*/
-    
     .sectionhead{
         width: 100%;
         padding: 70px 20px 70px 20px;
     }
     
+    .md-hero-image{
+        height: 250px;
+    }
+    
     h1{
         font-size: 28px;
+        margin-bottom: 10px;
     }
     
     h2{
-        font-size: 16px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     
     .subtitle{
@@ -138,9 +92,16 @@
         }
     }
     
+    header{
+        background: rgba(255, 255, 255, 0.85) !important;
+        border-bottom: 1px solid #d2d2d2;
+        height: inherit;
+        padding: 20px 0px 20px 0px;
+    }
+    
     #header-logo{
         margin: 0px 0px 0px 20px;
-        height: 42px;
+        height: 26px;
         background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat;
     }
     
@@ -225,12 +186,6 @@
                     margin-bottom: 10px;
                 }
             }
-            .timeline-milestone{
-                width: 145px;
-                height: 35px;
-                line-height: 0.3;
-                font-size: 16px;
-            }
         }
         .timeline-end{
             width: 100%;
@@ -245,6 +200,9 @@
             .inline-box{
                 width: 100%;
                 margin: 0px;
+                p{
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -277,9 +235,12 @@
         }
         .overlay-section{
             width: 100%;
+            padding: 50px 0px;
             .overlay-title{
                 width: 100%;
-                text-align: center;
+                padding: 0px 20px;
+                margin-bottom: 10px;
+                text-align: left;
             }
             .overlay-text{
                 width: 100%;
@@ -292,7 +253,7 @@
         width: 100%;
         top: 0px;
         right: 0px;
-        height: 65px;
+        height: 67px;
         background: #eeeeee;
         border-bottom: 1px solid #d2d2d2;
         span{
@@ -313,6 +274,12 @@
         #aboutme{
             width: 100%;
             padding: 0px 20px;
+            p{
+                width: 100%;
+            }
+        }
+        .about-img{
+            width: 100%;
         }
         
     }
@@ -324,7 +291,7 @@
     .map-overlapping{
         width: 90%;
         h2{
-            font-size: 16px;
+            margin-bottom: 10px;
         }
     }
     
