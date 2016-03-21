@@ -1,5 +1,3 @@
-/ * * * * * /
-
 Animate.css
 by Dan Eden (http://daneden.github.io/animate.css/)
 

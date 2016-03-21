@@ -21,14 +21,15 @@
         <link rel="stylesheet" href="css/lightbox.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/svganimate.css">
-        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
         
         <!-- Einbinden des Favicon -->
         <link rel="shortcut icon" href="img/layout/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="img/layout/favicon.ico" type="image/x-icon" />
         
         <!-- read the licenses of the used plugins here: -->
-        <script src="plugin-licenses.txt"></script>
+        <a href="plugin-licenses.txt"></a>
         
     </head>
     <body class="noscroll">
@@ -40,7 +41,7 @@
         <section id="mdloader">
             <div class="fullwidth div-center">
                 <div id="header-logo" class="col-4">
-                     <img src="img/layout/md-logo-admin-vbs-inv.svg" alt="Logo VBS"> 
+                     <!--<img src="img/layout/md-logo-admin-vbs-inv.svg" alt="Logo VBS"> -->
                 </div>
             </div>
             <div id="mdloader-content" class="col-8 div-center">                
@@ -62,7 +63,7 @@
         <header id="mdheader">
             <div class="fullwidth div-center">
                 <div id="header-logo" class="col-4">
-                     <img src="img/layout/md-logo-admin-vbs.svg" alt="Logo VBS"> 
+                    
                 </div>
             </div>
         </header>        
@@ -145,7 +146,7 @@
                             <div id="videoplayer">
                             
                                 <video id="video-mediamatiker" class="video-js vjs-default-skin"
-                                  controls preload="auto" width="780" height="439"
+                                  controls preload="auto" width="auto" height="auto"
                                   poster="img/screenshot-video.png"
                                   data-setup='{"example_option":true}'>
                                     <source src="media/mediamatiker.mp4" type='video/mp4' />
@@ -261,6 +262,10 @@
             </section>
         </section>
         
+        <section id="img-zem" class="md-hero-image">        
+        
+        </section>
+        
         
         <section id="mdschule">
             <div class="pagewidth bg-light-blue-grey">
@@ -304,7 +309,7 @@
             
             <div class="sectionhead col-10 div-center">
                 <h1 class="dark-aqua centered">Wie werde ich MediamatikerIn im ZEM?</h1> 
-                <p class="subtitle light-blue-grey centered col-8 div-center">
+                <p class="subtitle light-blue-grey centered div-center">
                     Schön zu hören, dass du dich für die Lehrstelle als MediamatikerIn im Zentrum elektronische Medien interessierst. Doch wie kommst du nun zu uns? Folgend zeige ich dir, den Ablauf mit allen wichtigen Zwischenschritten. 
                 </p>
             </div>
@@ -346,8 +351,11 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
-                    Lehrbeginn
+                <div class="timeline-ms-wrapper div-center wow fadeInUp">
+                    <div class="timeline-milestone div-center"></div>
+                    <p class="timeline-ms-text bold uppercase centered">
+                        Lehrbeginn
+                    </p>                     
                 </div>
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
@@ -372,8 +380,11 @@
                 
                 <div class="timeline-line div-center wow fadeInUp"></div>
                 
-                <div class="timeline-milestone div-center bold uppercase centered white wow fadeInUp">
-                    Lehrstelle
+                <div class="timeline-ms-wrapper div-center wow fadeInUp">
+                    <div class="timeline-milestone div-center"></div>
+                    <p class="timeline-ms-text bold uppercase centered">
+                        Lehrstelle
+                    </p>                     
                 </div>
                 
                 <div class="timeline-end col-8 div-center">
@@ -460,7 +471,7 @@
                 </div></label><!--
 
                 --><label class="box-label" for="openMT">
-                <div class="inline-box border col-4" style="margin: 0px 8px 0px 8px;">
+                <div id="mtinline" class="inline-box border col-4" style="margin: 0px 8px 0px 8px;">
                     <img height="70" src="img/content/icons/icon-mt.svg">
                         <p lang="de" class="text16 centered light light-blue-grey">
                             Die Mediathek beschäftigt sich mit der Archivierung dem Vertrieb sowie der Aufbereitung von Bild- und Videomaterial analog und im Web.
@@ -471,7 +482,7 @@
                 </div></label><!--
 
                 --><label class="box-label" for="openPM">
-                <div class="inline-box border col-4" style="margin: 0px 0px 0px 8px;">
+                <div id="pminline" class="inline-box border col-4" style="margin: 0px 0px 0px 8px;">
                     <img height="70" src="img/content/icons/icon-pm.svg">
                         <p lang="de" class="text16 centered light light-blue-grey">
                             Die Printmedien sind die Anlaufstelle für alles was mit Produkten für den Druck zu tun hat. Es entstehen Broschüren, Flyer und vieles mehr.
@@ -496,7 +507,11 @@
                     </p>                
                 </div>
                 
-                <div class="overlay-section col-10 div-center">
+                <div class="overlay-image div-center">
+                    <img src="img/layout/md-iam.jpg">               
+                </div>
+                
+                <div class="overlay-section overlay-nbt col-10 div-center">
                     <div class="overlay-title col-3">
                         <h2 class="light-blue-grey uppercase">DVD Programmierung</h2>
                     </div>
@@ -696,20 +711,32 @@
                 
             </div> 
             
-            <div id="aboutme" class="col-8 div-center">
-                <p class="subtitle light-blue-grey animated fadeInUp">
+            <div id="aboutme" class="col-10 div-center">
+                <p class="subtitle light-blue-grey col-8 div-center animated fadeInUp">
                     Meine Lehre habe ich im Jahr 2012 in der BiCT AG angefangen und dort eine zweijährige Grundausbildung in verschiedenen Programmen und Projekten sowie in visueller Kommunikation und Marketing erhalten. Als es Mitte des zweiten Lehrjahres an in die Bewerbungsphase ging, sprach mich der Stellenbeschrieb des ZEM sofort an, so dass ich mich beworben habe und zu einem Bewerbungsgespräch eingeladen wurde. Wenige Zeit später habe ich schliesslich die erfreuliche Nachricht erhalten, dass ich ab Sommer 2014 meine Lehre im Zentrum elektronische Medien weiterführen kann.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                     Während meiner Zeit im ZEM durfte ich viele neue Erfahrungen sammeln. Ich schätze das moderne Arbeitsumfeld und die Infrastruktur. Ausserdem finde ich es super, dass ich in verschiedene Bereiche reinschauen konnte und mich auch bei verschiedenen Projekten selbstständig und im Team beteiligen konnte.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                      Ein absolutes Highlight waren die zwei Einsätze bei denen ich jeweils ein Filmteam begleiten und unterstützen durfte. Beim ersten Einsatz drehten wir im Auftrag der Spitzensport Rekrutenschule bei der Skisprungschanze in Einsiedeln. Dort lernte ich unter anderem Simon Amman kennen und lernte wie man ein Filmset für ein Interview aufbaut und man eindrückliche Momentaufnahmen einfängt.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <div class="about-img col-10 div-center wow fadeInUp">
+                    <img src="img/content/md-super-puma.jpg">
+                    <p class="text16 light centered">
+                        Super Puma der Schweizer Armee.
+                    </p>
+                </div>
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                     Bei meinem zweiten Einsatz durfte ich in Wangen an der Aare bei einer Katastrophenübung mit dabei sein. Besonders spannend hierbei war für mich die Tatsache, dass ich gemeinsam mit zwei Berufspiloten in einem Super Puma der Schweizer Armee bei der ganzen Übung mitten im Geschehen dabei sein und die ganzen Eindrücke mit der Kamera festhalten konnte.
                 </p>
-                <p class="subtitle light-blue-grey wow fadeInUp" data-wow-delay="0.2s">
+                <div class="about-img col-10 div-center wow fadeInUp">
+                    <img src="img/content/md-jarap.jpg">
+                    <p class="text16 light centered">
+                        Jahresrapport der LBA im Velodrome Grenchen.
+                    </p>
+                </div>
+                <p class="subtitle light-blue-grey col-8 div-center wow fadeInUp" data-wow-delay="0.2s">
                     Nebst diesen beiden Anlässen durfte ich gemeinsam mit anderen Lernenden beim Jahresanlass der Logistikbasis der Armee in Grenchen mithelfen. Dies war sehr eindrücklich, da das ganze eine riesige logistische Herausforderung darstellte, weil alle Mitarbeiter aus der ganzen Schweiz bei diesem Anlass teilnahmen.            
                 </p>
                             
@@ -743,7 +770,7 @@
                     </p>
                 </div>
             
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
             <script type="text/javascript">
                 // Die Karte wird eingefügt, wenn das Fenster geladen hat. 
                 google.maps.event.addDomListener(window, 'load', init);
@@ -757,7 +784,8 @@
                         // Mit der folgenden Einstellung kann festgelegt werden, ob die Standardbenutzeroberfläche mit Zoomregler usw. angezeigt werden soll oder nicht.
                         disableDefaultUI: true,
                         // Hiermit habe ich das Scrollen mit dem Mausrad deaktiviert. Das ist besonders für Notebooknutzer hilfreich, da sie sonst vom Scrollen der Webseite abgehalten werden können.
-                        scrollwheel: false,  
+                        scrollwheel: false, 
+                        draggable: false,
                         // Hier werden Latitude und Langitude des geünschten Kartenausschnitts festgelegt. Diese Einstellung ist immer notwendig.
                         center: new google.maps.LatLng(46.966881, 7.454935),
                         // Hier wird der Style der Map definiert. Hier kann der bei Snazzymaps generierte Code eingefügt werden.

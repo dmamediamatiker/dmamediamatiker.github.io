@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* - - - - - - - - - -
+
+    CSS-Datei für das Responsive-Design:
+    "Interaktives Berufsportrait eines Mediamatikers"
+    2016 | Zentrum elektronische Medien | Stefan Eckstein
+
+- - - - - - - - - - */
+@media only screen and (max-width: 640px) {
+  .sectionhead {
+    width: 100%;
+    padding: 70px 20px 70px 20px; }
+
+  .md-hero-image {
+    height: 250px; }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px; }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px; }
+
+  .subtitle {
+    font-size: 16px; }
+
+  .more-info {
+    width: 100%;
+    padding: 0px 20px; }
+    .more-info p {
+      font-size: 12px; }
+
+  .quote {
+    width: 100%;
+    padding: 70px 0px; }
+    .quote p {
+      width: 100%;
+      padding: 0px 20px; }
+
+  .link-buttons {
+    width: 100%;
+    padding: 30px 20px 70px 20px; }
+    .link-buttons .external-button {
+      width: 80%;
+      margin: 10px auto;
+      padding: 15px;
+      float: none; }
+      .link-buttons .external-button h2 {
+        letter-spacing: 0;
+        position: relative;
+        text-align: center;
+        margin-left: 50px; }
+        .link-buttons .external-button h2 a {
+          margin: -15px -40px -15px -40px;
+          padding: 15px 40px 15px 40px; }
+      .link-buttons .external-button h2:before {
+        font-size: 14px;
+        top: 8px;
+        left: -30px;
+        position: absolute; }
+
+  #mdloader #mdloader-content {
+    width: 100%; }
+  #mdloader #header-logo {
+    margin-top: 20px;
+    background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat; }
+
+  header {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-bottom: 1px solid #d2d2d2;
+    height: inherit;
+    padding: 20px 0px 20px 0px; }
+
+  #header-logo {
+    margin: 0px 0px 0px 20px;
+    height: 26px;
+    background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat; }
+
+  #mdhome #mdhome-content {
+    width: 100%; }
+  #mdhome #mdhome-skyline {
+    width: 310px; }
+    #mdhome #mdhome-skyline svg {
+      width: 100%; }
+  #mdhome #mdhometext {
+    padding: 0px 20px; }
+  #mdhome #scrolldown p {
+    display: none; }
+
+  #mdwie #videosection {
+    height: 440px; }
+  #mdwie #playerwrapper {
+    width: 100%; }
+    #mdwie #playerwrapper p {
+      width: 100%;
+      padding: 0px 20px; }
+  #mdwie #videoplayer {
+    padding: 0px 20px; }
+  #mdwie #video-mediamatiker {
+    margin: 0 auto;
+    width: 310px;
+    height: 174px; }
+  #mdwie #requirement-grid {
+    width: 100%;
+    padding: 0px 20px; }
+  #mdwie .grid-item {
+    width: 100%;
+    margin: 20px 0px;
+    float: none; }
+    #mdwie .grid-item img {
+      margin-bottom: 20px; }
+    #mdwie .grid-item h2 {
+      margin-bottom: 20px; }
+
+  #mdweg .sectionhead p {
+    width: 100%; }
+  #mdweg #timeline {
+    padding: 0px 20px; }
+    #mdweg #timeline .timeline-box {
+      width: 100%;
+      padding: 30px 40px !important; }
+      #mdweg #timeline .timeline-box h2 {
+        margin-bottom: 10px; }
+  #mdweg .timeline-end {
+    width: 100%; }
+    #mdweg .timeline-end p {
+      width: 100%; }
+  #mdweg .numbers-wrapper {
+    width: 100%;
+    padding: 0px 20px; }
+    #mdweg .numbers-wrapper .inline-box {
+      width: 100%;
+      margin: 0px; }
+      #mdweg .numbers-wrapper .inline-box p {
+        margin-top: 10px; }
+
+  #mdbereiche .bereiche-wrapper {
+    width: 100%;
+    padding: 0px 20px; }
+    #mdbereiche .bereiche-wrapper .inline-box {
+      width: 100%;
+      margin: 0px auto; }
+    #mdbereiche .bereiche-wrapper #mtinline {
+      margin: 20px 0px !important; }
+    #mdbereiche .bereiche-wrapper #pminline {
+      margin: 20px 0px !important; }
+
+  .overlaywrapper {
+    width: 90%;
+    padding: 70px 0px 0px 0px; }
+    .overlaywrapper .overlayfooter {
+      width: 100%; }
+    .overlaywrapper .sectionhead {
+      padding: 0px 20px 70px 20px; }
+    .overlaywrapper .overlay-section {
+      width: 100%;
+      padding: 50px 0px; }
+      .overlaywrapper .overlay-section .overlay-title {
+        width: 100%;
+        padding: 0px 20px;
+        margin-bottom: 10px;
+        text-align: left; }
+      .overlaywrapper .overlay-section .overlay-text {
+        width: 100%;
+        padding: 0px 20px; }
+
+  .closeoverlay {
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    height: 67px;
+    background: #eeeeee;
+    border-bottom: 1px solid #d2d2d2; }
+    .closeoverlay span {
+      top: 20px !important;
+      right: 20px !important;
+      left: inherit;
+      color: #3a4750; }
+
+  #mdme .text-extender {
+    width: 100%; }
+  #mdme p.text16 {
+    font-size: 12px; }
+  #mdme #aboutme {
+    width: 100%;
+    padding: 0px 20px; }
+    #mdme #aboutme p {
+      width: 100%; }
+  #mdme .about-img {
+    width: 100%; }
+
+  #map-wrapper {
+    margin-bottom: 70px; }
+
+  .map-overlapping {
+    width: 90%; }
+    .map-overlapping h2 {
+      margin-bottom: 10px; }
+
+  .footer-notice p {
+    width: 100%;
+    padding: 0px 20px; } }
+
+/*# sourceMappingURL=mobile.css.map */
