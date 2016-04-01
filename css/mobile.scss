@@ -6,7 +6,34 @@
 
 - - - - - - - - - - */
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 1260px){
+    .mdheader-wrapper{
+        width: 90%;
+    }   
+}
+
+@media only screen and (max-width: 1200px){
+    
+    #requirement-grid{
+            width: 100%;
+            padding: 0px 20px;
+        }
+        
+        .grid-item{
+            width: 50%;
+            min-height: 300px;
+            margin: 20px 0px;
+            img{
+                margin-bottom: 20px;
+            }
+            h2{
+                margin-bottom: 20px;
+            }          
+            
+        }
+}
+
+@media only screen and (max-width: 680px){
     
     .sectionhead{
         width: 100%;
@@ -73,10 +100,7 @@
                 position: absolute;
             }
         }
-    }
-    
-    
-    
+    }   
     
     #mdloader{
         #mdloader-content{
@@ -97,6 +121,10 @@
         border-bottom: 1px solid #d2d2d2;
         height: inherit;
         padding: 20px 0px 20px 0px;
+    }
+    
+    .mdheader-wrapper{
+        width: 100%;
     }
     
     #header-logo{
@@ -159,16 +187,7 @@
             width: 100%;
             margin: 20px 0px;
             float: none;
-            img{
-                margin-bottom: 20px;
-            }
-            h2{
-                margin-bottom: 20px;
-            }
         }
-        
-        
-        
         
     }
     

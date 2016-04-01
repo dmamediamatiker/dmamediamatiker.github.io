@@ -204,7 +204,7 @@ a {
   height: 100%;
   position: fixed;
   z-index: 30;
-  background: #3a4750 url(../img/layout/md-loader-pattern.png); }
+  background: #3a4750 url(../img/layout/md-loader-pattern.jpg); }
   #mdloader .fullwidth {
     position: fixed;
     left: 0px;
@@ -268,7 +268,7 @@ header {
 #mdhome {
   width: 100%;
   height: 100vh;
-  background: #f8f8f8 url(../img/layout/md-home-pattern.png); }
+  background: #f8f8f8 url(../img/layout/md-home-pattern.jpg); }
 
 #mdhome-content {
   margin: 0 auto;

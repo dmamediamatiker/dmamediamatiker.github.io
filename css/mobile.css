@@ -6,7 +6,23 @@
     2016 | Zentrum elektronische Medien | Stefan Eckstein
 
 - - - - - - - - - - */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1260px) {
+  .mdheader-wrapper {
+    width: 90%; } }
+@media only screen and (max-width: 1200px) {
+  #requirement-grid {
+    width: 100%;
+    padding: 0px 20px; }
+
+  .grid-item {
+    width: 50%;
+    min-height: 300px;
+    margin: 20px 0px; }
+    .grid-item img {
+      margin-bottom: 20px; }
+    .grid-item h2 {
+      margin-bottom: 20px; } }
+@media only screen and (max-width: 680px) {
   .sectionhead {
     width: 100%;
     padding: 70px 20px 70px 20px; }
@@ -72,6 +88,9 @@
     height: inherit;
     padding: 20px 0px 20px 0px; }
 
+  .mdheader-wrapper {
+    width: 100%; }
+
   #header-logo {
     margin: 0px 0px 0px 20px;
     height: 26px;
@@ -108,10 +127,6 @@
     width: 100%;
     margin: 20px 0px;
     float: none; }
-    #mdwie .grid-item img {
-      margin-bottom: 20px; }
-    #mdwie .grid-item h2 {
-      margin-bottom: 20px; }
 
   #mdweg .sectionhead p {
     width: 100%; }
