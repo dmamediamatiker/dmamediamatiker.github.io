@@ -10,18 +10,154 @@
   .mdheader-wrapper {
     width: 90%; } }
 @media only screen and (max-width: 1200px) {
+  .col-12, fullwidth {
+    width: 100%; }
+
   #requirement-grid {
     width: 100%;
     padding: 0px 20px; }
 
   .grid-item {
     width: 50%;
-    min-height: 300px;
+    min-height: 310px;
     margin: 20px 0px; }
     .grid-item img {
       margin-bottom: 20px; }
     .grid-item h2 {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+
+  .external-button {
+    float: none;
+    margin: 10px auto; }
+    .external-button h2 {
+      margin-bottom: 0px; }
+
+  .external-button:nth-child(3n+3) {
+    margin-right: auto; }
+
+  .external-button:nth-child(3n+1) {
+    margin-left: auto; }
+
+  #mdbereiche .bereiche-wrapper {
+    width: 100%;
+    padding: 0px 20px; }
+    #mdbereiche .bereiche-wrapper .inline-box {
+      margin: 0px auto; }
+      #mdbereiche .bereiche-wrapper .inline-box h2 {
+        margin-bottom: 0; }
+    #mdbereiche .bereiche-wrapper .box-label {
+      display: block;
+      margin: 0 auto; }
+
+  .inline-box {
+    display: inherit;
+    margin: 0 auto; }
+
+  .inline-box:nth-child(3n+1) {
+    margin-left: auto; }
+
+  .inline-box:nth-child(3n+3) {
+    margin-right: auto; }
+
+  .bereiche-wrapper .box-label {
+    display: block; }
+
+  #mtinline {
+    margin: 20px auto !important; }
+
+  #pminline {
+    margin: 20px auto !important; }
+
+  .overlaywrapper {
+    width: 90%;
+    padding: 70px 0px 0px 0px; }
+    .overlaywrapper .overlayfooter {
+      width: 100%; }
+    .overlaywrapper .sectionhead {
+      padding: 0px 20px 70px 20px; }
+    .overlaywrapper .overlay-section {
+      width: 100%;
+      padding: 50px 0px; }
+      .overlaywrapper .overlay-section .overlay-title {
+        width: 100%;
+        padding: 0px 20px;
+        margin-bottom: 10px;
+        text-align: left; }
+      .overlaywrapper .overlay-section .overlay-text {
+        width: 100%;
+        padding: 0px 20px; }
+
+  .closeoverlay {
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    height: 67px;
+    background: #eeeeee;
+    border-bottom: 1px solid #d2d2d2; }
+    .closeoverlay span {
+      top: 20px !important;
+      right: 20px !important;
+      left: inherit;
+      color: #3a4750; } }
+@media only screen and (max-width: 990px) {
+  .sectionhead, .quote, .more-info, .timeline-end, .subtitle {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  #mdweg .sectionhead {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+    #mdweg .sectionhead p {
+      width: 100%; }
+
+  .numbers-wrapper {
+    width: 100%; }
+
+  .inline-box {
+    display: inherit;
+    margin: 0 auto; }
+
+  .inline-box:nth-child(3n+1) {
+    margin-left: auto; }
+
+  .inline-box:nth-child(3n+3) {
+    margin-right: auto; }
+
+  .bereiche-wrapper .box-label {
+    display: block; }
+
+  #mtinline {
+    margin: 20px auto !important; }
+
+  #pminline {
+    margin: 20px auto !important; } }
+@media only screen and (max-width: 800px) {
+  #mdloader #mdloader-content {
+    width: 100%; }
+  #mdloader #header-logo {
+    margin-top: 20px;
+    background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat; }
+
+  header {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-bottom: 1px solid #d2d2d2;
+    height: inherit;
+    padding: 20px 0px 20px 0px; }
+
+  .mdheader-wrapper {
+    width: 100%; }
+
+  #header-logo {
+    margin: 0px 0px 0px 20px;
+    height: 26px;
+    background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat; }
+
+  #mdhome-content {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; } }
 @media only screen and (max-width: 680px) {
   .sectionhead {
     width: 100%;
@@ -76,26 +212,6 @@
         left: -30px;
         position: absolute; }
 
-  #mdloader #mdloader-content {
-    width: 100%; }
-  #mdloader #header-logo {
-    margin-top: 20px;
-    background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat; }
-
-  header {
-    background: rgba(255, 255, 255, 0.85) !important;
-    border-bottom: 1px solid #d2d2d2;
-    height: inherit;
-    padding: 20px 0px 20px 0px; }
-
-  .mdheader-wrapper {
-    width: 100%; }
-
-  #header-logo {
-    margin: 0px 0px 0px 20px;
-    height: 26px;
-    background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat; }
-
   #mdhome #mdhome-content {
     width: 100%; }
   #mdhome #mdhome-skyline {
@@ -149,49 +265,21 @@
       margin: 0px; }
       #mdweg .numbers-wrapper .inline-box p {
         margin-top: 10px; }
+  #mdweg #luftballon {
+    width: auto; }
 
-  #mdbereiche .bereiche-wrapper {
-    width: 100%;
-    padding: 0px 20px; }
-    #mdbereiche .bereiche-wrapper .inline-box {
-      width: 100%;
-      margin: 0px auto; }
-    #mdbereiche .bereiche-wrapper #mtinline {
-      margin: 20px 0px !important; }
-    #mdbereiche .bereiche-wrapper #pminline {
-      margin: 20px 0px !important; }
+  .inline-box {
+    width: 100%; }
 
-  .overlaywrapper {
-    width: 90%;
-    padding: 70px 0px 0px 0px; }
-    .overlaywrapper .overlayfooter {
-      width: 100%; }
-    .overlaywrapper .sectionhead {
-      padding: 0px 20px 70px 20px; }
-    .overlaywrapper .overlay-section {
-      width: 100%;
-      padding: 50px 0px; }
-      .overlaywrapper .overlay-section .overlay-title {
-        width: 100%;
-        padding: 0px 20px;
-        margin-bottom: 10px;
-        text-align: left; }
-      .overlaywrapper .overlay-section .overlay-text {
-        width: 100%;
-        padding: 0px 20px; }
+  .inline-box {
+    display: inherit;
+    margin: 0 auto; }
 
-  .closeoverlay {
-    width: 100%;
-    top: 0px;
-    right: 0px;
-    height: 67px;
-    background: #eeeeee;
-    border-bottom: 1px solid #d2d2d2; }
-    .closeoverlay span {
-      top: 20px !important;
-      right: 20px !important;
-      left: inherit;
-      color: #3a4750; }
+  .inline-box:nth-child(3n+1) {
+    margin-left: auto; }
+
+  .inline-box:nth-child(3n+3) {
+    margin-right: auto; }
 
   #mdme .text-extender {
     width: 100%; }
