@@ -14,7 +14,7 @@
 
 @media only screen and (max-width: 1200px){
     
-    .col-12, fullwidth{
+    .col-12, .fullwidth{
         width: 100%;
     }
     
@@ -221,8 +221,9 @@
     }
     
     #header-logo{
+        width: 30px;
         margin: 0px 0px 0px 20px;
-        height: 26px;
+        height: 42px;
         background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat;
     }
     
@@ -414,9 +415,7 @@
     .inline-box:nth-child(3n+3){
         margin-right: auto;
     }
-    
-    
-    
+        
     #mdme{
         .text-extender{
             width: 100%;
@@ -456,4 +455,11 @@
     }
   
     
+}
+
+
+@media only screen and (max-width:400px){
+    .overlay-button{
+        width: 100% !important; 
+    }
 }

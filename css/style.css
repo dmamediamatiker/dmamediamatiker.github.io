@@ -200,6 +200,7 @@ a {
 
 - - - - - - - - - - */
 #mdloader {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -261,9 +262,60 @@ header {
   transition: 0.5s ease; }
 
 #header-logo {
+  float: left;
   margin: 0px 0px 0px -30px;
   height: 42px;
   background: url(../img/layout/md-logo-admin-vbs.svg) no-repeat; }
+
+#header-nav {
+  width: 42px;
+  height: 42px;
+  float: right;
+  cursor: pointer;
+  background: orange; }
+
+#nav-wrapper {
+  position: relative;
+  pointer-events: none; }
+
+#md-navigation {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 82px;
+  z-index: 30;
+  pointer-events: all; }
+  #md-navigation #nav-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #565656;
+    position: absolute;
+    right: 15px;
+    top: -5px; }
+  #md-navigation nav {
+    background: white;
+    width: 180px;
+    padding: 20px;
+    border-radius: 12px; }
+    #md-navigation nav ul {
+      list-style-type: none; }
+      #md-navigation nav ul li {
+        text-align: center;
+        margin: -10px;
+        padding: 10px; }
+        #md-navigation nav ul li a {
+          font-family: "source_sans_pro_light", sans-serif;
+          font-size: 16px;
+          color: #3a4750;
+          margin: -10px;
+          padding: 10px; }
+      #md-navigation nav ul li:hover a {
+        color: #53a8b6; }
+
+.navvisible {
+  display: block !important; }
 
 #mdhome {
   width: 100%;

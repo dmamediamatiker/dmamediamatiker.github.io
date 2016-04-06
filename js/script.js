@@ -53,6 +53,22 @@ jQuery(document).ready(function($) {
     $('.footercloseoverlay').click( function() {        
         $(".overlaywrapper").removeClass("fadeInUp");
     } );
+    
+    
+    $(".opennav").click(function(){
+        $("#md-navigation").hasClass("navvisible") ? $("#md-navigation").removeClass("navvisible") : $("#md-navigation").addClass("navvisible");
+
+    })
+    
+    $('.navlist').click( function() {
+        $("#md-navigation").removeClass("navvisible");
+    } );
+    
+    // Das hie isch gange, aber het äbe komisch animiert
+    /*$('.opennav').click( function() {
+        $("#md-navigation").toggle("navvisible");
+    } );*/
+    
 				
 });
 
