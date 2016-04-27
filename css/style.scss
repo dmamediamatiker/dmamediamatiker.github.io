@@ -277,7 +277,7 @@ a{
 - - - - - - - - - - */
 
 #mdloader{
-    display: none;
+    /*display: none;*/
     width: 100%;
     height: 100%;
     position: fixed;
@@ -367,8 +367,70 @@ header{
     height: 42px;
     float: right;
     cursor: pointer;
-    background: orange;
+    position: relative;
 }
+
+#header-nav-inline{
+    width: 24px;
+    background: lime;
+    position: relative;
+    margin: 12px auto 0px auto;
+}
+
+.nav-line{
+    width: 12px;
+    height: 3px;
+    background: $md-grey;
+    position: absolute;
+    transition: 0.2s ease;
+}
+
+.top{
+    top: 0px;
+}
+.mid{
+    top: 7px;
+}
+.bottom{
+    top: 14px;
+}
+.left{
+    left: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.right{
+    right: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.navopend{
+    .top.left{
+        transform:  translate(1px, 2px) rotate(45deg) scaleX(1.25);
+    }
+    .top.right{
+        transform:  translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+    }
+    .mid.left{
+        width: 0px;
+        opacity: 0;
+    }
+    .mid.right{
+        width: 0px;
+        opacity: 0;
+    }
+    .bottom.left{
+        transform:  translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+    }
+    .bottom.right{
+        transform:  translate(0px, -2px) rotate(45deg) scaleX(1.25);
+    }
+}
+
+
+
+
 
 #nav-wrapper{
     position: relative;
@@ -396,6 +458,7 @@ header{
     
     nav{
         background: $md-white;
+        border: 1px solid rgb(247, 247, 247);
         width: 180px;
         padding: 20px;
         border-radius: 12px;

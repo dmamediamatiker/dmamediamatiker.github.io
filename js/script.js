@@ -57,11 +57,14 @@ jQuery(document).ready(function($) {
     
     $(".opennav").click(function(){
         $("#md-navigation").hasClass("navvisible") ? $("#md-navigation").removeClass("navvisible") : $("#md-navigation").addClass("navvisible");
+        
+        $("#header-nav-inline").hasClass("navopend") ? $("#header-nav-inline").removeClass("navopend") : $("#header-nav-inline").addClass("navopend");
 
     })
     
     $('.navlist').click( function() {
         $("#md-navigation").removeClass("navvisible");
+        $("#header-nav-inline").removeClass("navopend");
     } );
     
     // Das hie isch gange, aber het äbe komisch animiert
