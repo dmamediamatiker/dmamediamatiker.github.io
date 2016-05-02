@@ -10,7 +10,16 @@
   .mdheader-wrapper {
     width: 90%; } }
 @media only screen and (max-width: 1200px) {
-  .col-12, fullwidth {
+  #header-logo {
+    margin: 0px 0px 0px 20px; }
+
+  #header-nav {
+    right: 20px; }
+
+  #md-navigation {
+    right: 20px; }
+
+  .col-12, .fullwidth {
     width: 100%; }
 
   #requirement-grid {
@@ -100,6 +109,10 @@
       left: inherit;
       color: #3a4750; } }
 @media only screen and (max-width: 990px) {
+  .sectionhead {
+    width: 100%;
+    padding: 70px 20px 70px 20px; }
+
   .sectionhead, .quote, .more-info, .timeline-end, .subtitle {
     width: 100%;
     padding-left: 20px;
@@ -150,9 +163,13 @@
     width: 100%; }
 
   #header-logo {
+    width: 30px;
     margin: 0px 0px 0px 20px;
-    height: 26px;
+    height: 42px;
     background: url(../img/layout/md-logo-admin-vbs-flag.svg) no-repeat; }
+
+  #header-nav {
+    right: 20px; }
 
   #mdhome-content {
     width: 100%;
@@ -304,5 +321,8 @@
   .footer-notice p {
     width: 100%;
     padding: 0px 20px; } }
+@media only screen and (max-width: 400px) {
+  .overlay-button {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=mobile.css.map */

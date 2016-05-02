@@ -53,6 +53,25 @@ jQuery(document).ready(function($) {
     $('.footercloseoverlay').click( function() {        
         $(".overlaywrapper").removeClass("fadeInUp");
     } );
+    
+    
+    $(".opennav").click(function(){
+        $("#md-navigation").hasClass("navvisible") ? $("#md-navigation").removeClass("navvisible") : $("#md-navigation").addClass("navvisible");
+        
+        $("#header-nav-inline").hasClass("navopend") ? $("#header-nav-inline").removeClass("navopend") : $("#header-nav-inline").addClass("navopend");
+
+    })
+    
+    $('.navlist').click( function() {
+        $("#md-navigation").removeClass("navvisible");
+        $("#header-nav-inline").removeClass("navopend");
+    } );
+    
+    // Das hie isch gange, aber het äbe komisch animiert
+    /*$('.opennav').click( function() {
+        $("#md-navigation").toggle("navvisible");
+    } );*/
+    
 				
 });
 
