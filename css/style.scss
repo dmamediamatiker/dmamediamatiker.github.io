@@ -99,6 +99,10 @@ p {
     border: 1px solid #cdcccc;
 }
 
+.no-mb{
+    margin-bottom: 0px !important;
+}
+
 /* - - - - - - - - - -
 
     Alle globalen Textformatierungen für verschiedene Formate und Grössen.
@@ -277,7 +281,6 @@ a{
 - - - - - - - - - - */
 
 #mdloader{
-    /*display: none;*/
     width: 100%;
     height: 100%;
     position: fixed;
@@ -831,6 +834,7 @@ header{
     margin-top: 20px !important;
     border-radius: 12px;
     padding: 4px;
+    cursor: pointer;
     h2{
         font-size: 20px;
         color: $md-white;
@@ -932,6 +936,9 @@ header{
     cursor: pointer;
 }
 
+input#openRQ[type="checkbox"]:checked ~ #overlayRQ {
+  display: block;
+}
 
 input#openIAM[type="checkbox"]:checked ~ #overlayIAM {
   display: block;
