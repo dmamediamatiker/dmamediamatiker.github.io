@@ -118,6 +118,9 @@
     padding-left: 20px;
     padding-right: 20px; }
 
+  #img-zem {
+    display: none; }
+
   #mdweg .sectionhead {
     width: 100%;
     padding-left: 20px;
@@ -174,7 +177,17 @@
   #mdhome-content {
     width: 100%;
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+
+  .slide {
+    padding: 50px 20px; }
+    .slide .col-8 {
+      width: 100%; }
+
+  #video-mediamatiker {
+    margin: 0 auto;
+    width: 310px;
+    height: 174px; } }
 @media only screen and (max-width: 680px) {
   .sectionhead {
     width: 100%;
@@ -241,7 +254,7 @@
     display: none; }
 
   #mdwie #videosection {
-    height: 440px; }
+    height: 410px; }
   #mdwie #playerwrapper {
     width: 100%; }
     #mdwie #playerwrapper p {
@@ -249,10 +262,6 @@
       padding: 0px 20px; }
   #mdwie #videoplayer {
     padding: 0px 20px; }
-  #mdwie #video-mediamatiker {
-    margin: 0 auto;
-    width: 310px;
-    height: 174px; }
   #mdwie #requirement-grid {
     width: 100%;
     padding: 0px 20px; }

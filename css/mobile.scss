@@ -162,7 +162,9 @@
         padding-right: 20px;
     }
     
-    
+    #img-zem{
+        display: none;
+    }
     
     
     #mdweg{
@@ -253,6 +255,20 @@
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    
+    .slide{
+            padding: 50px 20px;
+            
+        .col-8{
+            width: 100%;
+        }
+    }
+    
+    #video-mediamatiker{
+        margin: 0 auto;
+        width: 310px;
+        height: 174px;
     }
     
 }
@@ -351,7 +367,7 @@
     
     #mdwie{
         #videosection{
-            height: 440px;
+            height: 410px;
         }
         #playerwrapper{
             width: 100%;
@@ -363,11 +379,8 @@
         #videoplayer{
             padding: 0px 20px;
         }
-        #video-mediamatiker{
-            margin: 0 auto;
-            width: 310px;
-            height: 174px;
-        }
+        
+        
         
         #requirement-grid{
             width: 100%;
