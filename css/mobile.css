@@ -6,6 +6,24 @@
     2016 | Zentrum elektronische Medien | Stefan Eckstein
 
 - - - - - - - - - - */
+@media only screen and (min-width: 960px) {
+  .slide.active {
+    margin-left: 0px; }
+
+  .slide {
+    transform: scale(0.75, 0.75);
+    margin-left: 200px;
+    opacity: 0.2; }
+
+  .slider .next {
+    font-size: 50px;
+    text-align: right;
+    padding-bottom: 0px; }
+
+  .slider .previous {
+    font-size: 50px;
+    text-align: left;
+    padding-bottom: 0px; } }
 @media only screen and (max-width: 1260px) {
   .mdheader-wrapper {
     width: 90%; } }
