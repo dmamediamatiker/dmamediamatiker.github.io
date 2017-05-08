@@ -21,7 +21,7 @@ jQuery(window).load(function() {
 jQuery(document).ready(function($) {
     
     // Mit der folgenden Funktion wird die Seite bis zu einem gewünschten Element (in diesem Fall dem #mdwie) gescrollt, wenn auf den kleinen Pfeil auf dem Startscreen geklickt wird. Der Scrollvorgang wird dabei animiert.
-    $(".scrolldown-arrow").click(function (){
+    $("#scroll-arrow").click(function (){
         $('html, body').animate({
             scrollTop: $("#mdwie").offset().top
         }, 1000);

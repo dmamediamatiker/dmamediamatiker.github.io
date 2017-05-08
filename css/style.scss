@@ -1377,6 +1377,16 @@ input#openPM[type="checkbox"]:checked ~ #overlayPM {
 	.slider:hover .next{
 		right: 0;
 	}
+    
+.slider .previous{
+     transform: rotate(90deg);
+}
+
+.slider .next{
+    transform: rotate(-90deg);
+}
+
+
 .previous:hover, .next:hover{
     color: rgba(255,255,255,0.8);
 }
