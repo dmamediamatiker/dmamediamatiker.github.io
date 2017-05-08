@@ -155,7 +155,7 @@
                     Scrolle weiter oder klicke auf das Icon um mehr zu erfahren.
                 </p>
                 <div class="scrollhint animated centered" style="">
-                    <span class="scrolldown-arrow icon icon-icon-arrow-down"></span>
+                    <span id="scroll-arrow" class="scrolldown-arrow icon icon-icon-arrow-down"></span>
                 </div>
             </div>
         
@@ -173,8 +173,9 @@
             <div id="videosection">
                 <div class="slider">
                     <div class="arrows">
-                        <span class="previous">&#xf053;</span>
-                        <span class="next">&#xf054;</span>
+                        <!--<span class="previous">&#xf053;</span>-->
+                        <span class="previous scrolldown-arrow icon icon-icon-arrow-down"></span>
+                        <span class="next scrolldown-arrow icon icon-icon-arrow-down"></span>
                     </div>
                     
                     <div class="slides">
@@ -194,7 +195,9 @@
                         <div class="slide">
                             <div id="videoplayer" class="col-8 div-center">
                                 <video id="video-mediamatiker" class="video-js vjs-default-skin" controls preload="none" width="auto" height="auto" poster="img/screenshot-bundesverwaltung.jpg" accesskey=""data-setup='{"example_option":true}'>
-                                    <source src="https://media.zem.ch/erklaervideos/Mediamatik-Ausbildung-Bundesverwaltung-Webversion.mp4" type='video/mp4' />
+                                    <source src="media/bundesverwaltung.mp4" type='video/mp4' />
+                                    <source src="media/bundesverwaltung.webm" type='video/webm' />
+                                    <source src="media/bundesverwaltung.ogv" type='video/ogg' />
                                     <p class="vjs-no-js">Um dieses Video anzuschauen, wird ein Webbrowser vorausgesetzt, der <a href="http://videojs.com/html5-video-support/" target="_blank">HTML5-Videos unterstützt.</a></p>
                                 </video>
                             </div>
