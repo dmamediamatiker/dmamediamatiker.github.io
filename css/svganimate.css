@@ -7,25 +7,25 @@
   stroke-dashofset: 0;
   animation: anim-icon-ballon-outline 3s ease;
   -webkit-animation: ballon-outer 3s ease infinite;
-  stroke: #54a8b6; }
+  stroke: #2e264d; }
 .animatedballon .icon-ballon-path-reflection {
   stroke-dasharray: 62;
   stroke-dashofset: 0;
   -webkit-animation: dash 3s ease infinite;
   animation: reflection 3s ease;
-  stroke: #54a8b6; }
+  stroke: #2e264d; }
 .animatedballon .icon-ballon-path-ventil {
   stroke-dasharray: 52;
   stroke-dashofset: 0;
   -webkit-animation: ventil 3s ease infinite;
   animation: ventil 3s ease;
-  stroke: #54a8b6; }
+  stroke: #2e264d; }
 .animatedballon .icon-ballon-path-schnur {
   stroke-dasharray: 114;
   stroke-dashofset: 0;
   -webkit-animation: dash 3s ease infinite;
   animation: band 3s ease;
-  stroke: #54a8b6; }
+  stroke: #2e264d; }
 @keyframes anim-icon-ballon-outline {
   from {
     stroke-dashoffset: 250; }
@@ -56,7 +56,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-mac-body {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 213;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -71,7 +71,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-mac-monitor {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 140;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -86,7 +86,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-mac-mtn {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 75;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -102,7 +102,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-printer-paper {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 78;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -118,7 +118,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-printer-body {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 89;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -134,7 +134,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-printer-button {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 13;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -150,7 +150,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-printer-back {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 70;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -166,7 +166,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-cam-body {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 117;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -180,7 +180,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-cam-inner {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 43;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -194,7 +194,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-cd-inner {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 17;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -210,7 +210,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-cd-outer {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 66;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -226,7 +226,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-linie-left {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 159;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -240,7 +240,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-linie-right {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 49;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -254,7 +254,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-plant-pot {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 53;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -270,7 +270,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-plant-pot-top {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 49;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -286,7 +286,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-plant-leaf1 {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 22;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -301,7 +301,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-plant-leaf2 {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 24;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -316,7 +316,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-plant-leaf3 {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 10;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -331,7 +331,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-plant-leaf4 {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 13;
   stroke-dashofset: 0;
   stroke-width: 2;
@@ -346,7 +346,7 @@
     stroke-dashoffset: 0; } }
 .animatedskyline #sky-plant-leaf5 {
   fill: none;
-  stroke: #53A8B6;
+  stroke: #2e264d;
   stroke-dasharray: 16;
   stroke-dashofset: 0;
   stroke-width: 2;
