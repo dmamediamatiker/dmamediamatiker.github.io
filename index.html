@@ -950,25 +950,20 @@
         
         
         </section>
-        
-        
-        
-            <!-- Piwik zur Erfassung von Statistiken der Webseite. -->
-                <script type="text/javascript">
-                 var _paq = _paq || [];
-                 _paq.push(["setDomains", ["*.dmamediamatiker.github.io"]]);
-                 _paq.push(['trackPageView']);
-                 _paq.push(['enableLinkTracking']);
-                 (function() {
-                   var u="//stats.dma.ch/";
-                   _paq.push(['setTrackerUrl', u+'piwik.php']);
-                   _paq.push(['setSiteId', 12]);
-                   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-                 })();
-                </script>
-                <noscript><p><img src="//stats.dma.ch/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
-            <!-- Ende Piwik Code -->
+
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="https://tracking.blueforce.ch/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '8']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
         
         <script src="js/jquery1.12.0.min.js"></script>
         <script src="js/lightbox.js"></script>
