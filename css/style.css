@@ -32,11 +32,11 @@ p {
   color: white; }
 
 .light-blue-grey {
-  color: #3a4750; }
+  color: #2e264d; }
   .light-blue-grey a {
-    color: #3a4750; }
+    color: #2e264d; }
   .light-blue-grey a:visited {
-    color: #3a4750; }
+    color: #2e264db7; }
 
 .bg-light-blue-grey {
   background: #fae6b6;
@@ -152,7 +152,6 @@ a {
     position: relative;
     margin-left: 50px; }
     .external-button h2 a {
-      color: #3a4750;
       text-decoration: none;
       margin: -25px -40px -25px -40px;
       padding: 25px 40px 25px 40px; }
@@ -286,7 +285,7 @@ header {
 .nav-line {
   width: 12px;
   height: 3px;
-  background: #565656;
+  background: #2e264d;
   position: absolute;
   transition: 0.2s ease; }
 
@@ -359,11 +358,12 @@ header {
         #md-navigation nav ul li a {
           font-family: "source_sans_pro_light", sans-serif;
           font-size: 16px;
-          color: #3a4750;
+          color: #2e264d;
           margin: -10px;
+          transition: .2s ease;
           padding: 10px; }
       #md-navigation nav ul li:hover a {
-        color: #2e264d;
+        color: #2e264d93;
         cursor: pointer;
       }
 
@@ -570,7 +570,7 @@ header {
   text-align: center; }
 
 #timeline-facts {
-  background: #eeeeee;
+  background: #fae6b6;
   padding-bottom: 100px; }
 
 .inline-spacer {
@@ -772,7 +772,7 @@ input#openPM[type="checkbox"]:checked ~ #overlayPM {
   padding: 20px 0px;
   background: #373737; }
   .footer-end .icon-icon-heart {
-    color: #2e264d; }
+    color: #fae6b6; }
 
 /* - - - - - - - - - -
 
@@ -976,7 +976,7 @@ input#openPM[type="checkbox"]:checked ~ #overlayPM {
   transition: all .3s;
   perspective: 900px;
   transform-style: preserve-3d;
-  background: #303841; }
+  background: #2e264d; }
   .slider p {
     margin-top: 35px; }
 
