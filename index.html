@@ -30,6 +30,8 @@
         
         <!-- read the licenses of the used plugins here: -->
         <a href="plugin-licenses.txt"></a>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArsJsuv9Lg1sij5dpjb-kiKGw6w2LjutA&callback=initMap" type="text/javascript"></script>
         
     </head>
     <body class="noscroll">
@@ -856,6 +858,7 @@
             <div id="map-wrapper">
             
             <div id="map">
+                <img src="img/content/map.png" alt="Dieses Bild konnte nicht geladen werden"></img>
             </div>
                 
                 <div class="map-overlapping col-6 border">
@@ -868,52 +871,16 @@
                         CH-3003 Bern<br>
                     </p>
                 </div>
-            
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArsJsuv9Lg1sij5dpjb-kiKGw6w2LjutA" type="text/javascript"></script>
-            <script type="text/javascript">
-                // Die Karte wird eingefügt, wenn das Fenster geladen hat. 
-                google.maps.event.addDomListener(window, 'load', init);
-
-                function init() {
-                    // Grundlegende Optionen zur Einbettung von Google Maps.
-                    // Weitere Einstellungsmöglichkeiten können unter folgendem Link eingesehen werden: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                    var mapOptions = {
-                        // Die Zoomstufe, auf der sich die Karte befinden soll. Dieser Wert ist immer notwendig und muss definiert werden.
-                        zoom: 16,
-                        // Mit der folgenden Einstellung kann festgelegt werden, ob die Standardbenutzeroberfläche mit Zoomregler usw. angezeigt werden soll oder nicht.
-                        disableDefaultUI: true,
-                        // Hiermit habe ich das Scrollen mit dem Mausrad deaktiviert. Das ist besonders für Notebooknutzer hilfreich, da sie sonst vom Scrollen der Webseite abgehalten werden können.
-                        scrollwheel: false, 
-                        draggable: false,
-                        // Hier werden Latitude und Langitude des geünschten Kartenausschnitts festgelegt. Diese Einstellung ist immer notwendig.
-                        center: new google.maps.LatLng(46.966881, 7.454935),
-                        // Hier wird der Style der Map definiert. Hier kann der bei Snazzymaps generierte Code eingefügt werden.
-                        styles: [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#fae6b6"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"landscape.natural.terrain","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":1}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{featureType: "road.local",elementType: "geometry",stylers: [{color: "#ebebeb"},]},{featureType: "road.arterial",elementType: "geometry",stylers: [{color: "#ebebeb"},]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#2e264d"},{"visibility":"on"}]}]
-                    };
-                    // Definieren, in welchem Element die Karte angezeigt werden soll.
-                    var mapElement = document.getElementById('map');
-                    var map = new google.maps.Map(mapElement, mapOptions);
-                    // Erstellen einer Markierung auf der Karte.
-                    var marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(46.966881, 7.454935),
-                        map: map,
-                        icon: 'img/layout/marker-solid.png',
-                        title: 'Zentrum digitale Medien der Armee DMA'
-                    });
-                }
-            </script>
                 
             <div class="clearfix"></div>
                 
             </div>
-            
             
             <div class="more-info col-8 div-center">
                 <p class="subtitle light-blue-grey centered">
                     Besuche uns auf einer unserer Webplattformen:
                 </p>
             </div>
-            
             
             <section class="link-buttons col-12 div-center">
                 
@@ -930,8 +897,6 @@
                 </div>
             
                 <div class="clearfix"></div>
-            
-            
             
             </section>
             
